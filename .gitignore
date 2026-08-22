@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+backend/model/*.joblib
+node_modules/
+dist/
+.env
+*.log
+.DS_Store

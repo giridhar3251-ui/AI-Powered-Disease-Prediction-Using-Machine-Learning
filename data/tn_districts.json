@@ -1,0 +1,580 @@
+{
+  "districts": [
+    "Ariyalur",
+    "Chengalpattu",
+    "Chennai",
+    "Coimbatore",
+    "Cuddalore",
+    "Dharmapuri",
+    "Dindigul",
+    "Erode",
+    "Kallakurichi",
+    "Kanchipuram",
+    "Kanyakumari",
+    "Karur",
+    "Krishnagiri",
+    "Madurai",
+    "Mayiladuthurai",
+    "Nagapattinam",
+    "Namakkal",
+    "Nilgiris",
+    "Perambalur",
+    "Pudukkottai",
+    "Ramanathapuram",
+    "Ranipet",
+    "Salem",
+    "Sivaganga",
+    "Tenkasi",
+    "Thanjavur",
+    "Theni",
+    "Thoothukudi",
+    "Tiruchirappalli",
+    "Tirunelveli",
+    "Tirupathur",
+    "Tiruppur",
+    "Tiruvallur",
+    "Tiruvannamalai",
+    "Tiruvarur",
+    "Vellore",
+    "Viluppuram",
+    "Virudhunagar"
+  ],
+  "hospitals": [
+    {
+      "id": "hosp-1",
+      "name": "Apollo Hospitals Greams Road",
+      "district": "Chennai",
+      "taluk": "Thousand Lights",
+      "address": "21 Greams Lane, Thousand Lights, Chennai, Tamil Nadu 600006",
+      "rating": 4.8,
+      "reviews_count": 8420,
+      "phone": "+91 44 2829 0200",
+      "website": "https://www.apollohospitals.com",
+      "open_now": true,
+      "hours": {
+        "Monday": "24 Hours (Emergency & OPD 08:00 - 20:00)",
+        "Tuesday": "24 Hours (Emergency & OPD 08:00 - 20:00)",
+        "Wednesday": "24 Hours (Emergency & OPD 08:00 - 20:00)",
+        "Thursday": "24 Hours (Emergency & OPD 08:00 - 20:00)",
+        "Friday": "24 Hours (Emergency & OPD 08:00 - 20:00)",
+        "Saturday": "24 Hours (Emergency & OPD 08:00 - 18:00)",
+        "Sunday": "24 Hours Emergency Service"
+      },
+      "holiday_note": null,
+      "specialties": [
+        "Dermatology",
+        "Cardiology",
+        "Neurology",
+        "Gastroenterology",
+        "Pulmonology",
+        "Orthopedics",
+        "Emergency Care"
+      ],
+      "branches": [
+        {
+          "district": "Madurai",
+          "name": "Apollo Speciality Hospitals, Lake View Road, Madurai",
+          "rating": 4.7,
+          "reviews_count": 3120,
+          "phone": "+91 452 258 0880",
+          "address": "Lake View Road, K.K. Nagar, Madurai 625020",
+          "open_now": true
+        },
+        {
+          "district": "Tiruchirappalli",
+          "name": "Apollo Speciality Hospitals, Ariyamangalam, Trichy",
+          "rating": 4.6,
+          "reviews_count": 1840,
+          "phone": "+91 431 407 7777",
+          "address": "Trichy-Chennai Trunk Road, Trichy 620010",
+          "open_now": true
+        },
+        {
+          "district": "Karur",
+          "name": "Apollo Reach Hospital, Karur",
+          "rating": 4.5,
+          "reviews_count": 940,
+          "phone": "+91 4324 233 333",
+          "address": "Covai Road, Karur 639002",
+          "open_now": true
+        }
+      ]
+    },
+    {
+      "id": "hosp-2",
+      "name": "KMCH (Kovai Medical Center and Hospital)",
+      "district": "Coimbatore",
+      "taluk": "Coimbatore North",
+      "address": "99, Avinashi Rd, Peelamedu, Indira Nagar, Coimbatore, Tamil Nadu 641014",
+      "rating": 4.7,
+      "reviews_count": 6250,
+      "phone": "+91 422 432 3800",
+      "website": "https://www.kmchhospitals.com",
+      "open_now": true,
+      "hours": {
+        "Monday": "24 Hours",
+        "Tuesday": "24 Hours",
+        "Wednesday": "24 Hours",
+        "Thursday": "24 Hours",
+        "Friday": "24 Hours",
+        "Saturday": "24 Hours",
+        "Sunday": "24 Hours Emergency"
+      },
+      "holiday_note": null,
+      "specialties": [
+        "Dermatology",
+        "Cardiology",
+        "Neurology",
+        "Gastroenterology",
+        "Pulmonology",
+        "Endocrinology"
+      ],
+      "branches": [
+        {
+          "district": "Erode",
+          "name": "KMCH Speciality Hospital, Erode",
+          "rating": 4.6,
+          "reviews_count": 1450,
+          "phone": "+91 424 226 2838",
+          "address": "Perundurai Road, Erode 638011",
+          "open_now": true
+        },
+        {
+          "district": "Tiruppur",
+          "name": "KMCH City Center, Tiruppur",
+          "rating": 4.5,
+          "reviews_count": 780,
+          "phone": "+91 421 432 4000",
+          "address": "Kangayam Road, Tiruppur 641604",
+          "open_now": true
+        }
+      ]
+    },
+    {
+      "id": "hosp-3",
+      "name": "Christian Medical College (CMC)",
+      "district": "Vellore",
+      "taluk": "Vellore",
+      "address": "Ida Scudder Road, Vellore, Tamil Nadu 632004",
+      "rating": 4.9,
+      "reviews_count": 14200,
+      "phone": "+91 416 228 1000",
+      "website": "https://www.cmch-vellore.edu",
+      "open_now": true,
+      "hours": {
+        "Monday": "24 Hours (OPD 07:30 - 17:00)",
+        "Tuesday": "24 Hours (OPD 07:30 - 17:00)",
+        "Wednesday": "24 Hours (OPD 07:30 - 17:00)",
+        "Thursday": "24 Hours (OPD 07:30 - 17:00)",
+        "Friday": "24 Hours (OPD 07:30 - 17:00)",
+        "Saturday": "24 Hours (OPD 07:30 - 12:30)",
+        "Sunday": "24 Hours Emergency Care"
+      },
+      "holiday_note": "Special festive timings may apply on public holidays for non-emergency OPD.",
+      "specialties": [
+        "Dermatology",
+        "Infectious Disease",
+        "Cardiology",
+        "Neurology",
+        "Rheumatology",
+        "Hepatology",
+        "Endocrinology"
+      ],
+      "branches": [
+        {
+          "district": "Ranipet",
+          "name": "CMC Ranipet Campus Hospital",
+          "rating": 4.8,
+          "reviews_count": 3200,
+          "phone": "+91 4172 281 000",
+          "address": "Kilminnal, Ranipet 632517",
+          "open_now": true
+        },
+        {
+          "district": "Tirupathur",
+          "name": "CMC Community Health Centre",
+          "rating": 4.6,
+          "reviews_count": 650,
+          "phone": "+91 4179 220 120",
+          "address": "Main Road, Tirupathur 635601",
+          "open_now": true
+        }
+      ]
+    },
+    {
+      "id": "hosp-4",
+      "name": "Meenakshi Mission Hospital and Research Centre",
+      "district": "Madurai",
+      "taluk": "Madurai North",
+      "address": "Melur Road, Madurai, Tamil Nadu 625107",
+      "rating": 4.7,
+      "reviews_count": 5890,
+      "phone": "+91 452 426 3000",
+      "website": "https://www.meenakshimission.org",
+      "open_now": true,
+      "hours": {
+        "Monday": "24 Hours",
+        "Tuesday": "24 Hours",
+        "Wednesday": "24 Hours",
+        "Thursday": "24 Hours",
+        "Friday": "24 Hours",
+        "Saturday": "24 Hours",
+        "Sunday": "24 Hours"
+      },
+      "holiday_note": null,
+      "specialties": [
+        "Dermatology",
+        "Cardiology",
+        "Gastroenterology",
+        "Pulmonology",
+        "Orthopedics",
+        "Infectious Disease"
+      ],
+      "branches": [
+        {
+          "district": "Dindigul",
+          "name": "Meenakshi Hospital Clinic, Dindigul",
+          "rating": 4.5,
+          "reviews_count": 420,
+          "phone": "+91 451 242 1100",
+          "address": "Palani Road, Dindigul 624001",
+          "open_now": true
+        },
+        {
+          "district": "Sivaganga",
+          "name": "Meenakshi Outreach Centre, Karaikudi",
+          "rating": 4.4,
+          "reviews_count": 310,
+          "phone": "+91 4565 224 800",
+          "address": "College Road, Karaikudi 630002",
+          "open_now": true
+        }
+      ]
+    },
+    {
+      "id": "hosp-5",
+      "name": "Kauvery Hospital",
+      "district": "Tiruchirappalli",
+      "taluk": "Tiruchirappalli West",
+      "address": "1, K.C. Road, Tennur, Tiruchirappalli, Tamil Nadu 620017",
+      "rating": 4.8,
+      "reviews_count": 4980,
+      "phone": "+91 431 400 6000",
+      "website": "https://www.kauveryhospital.com",
+      "open_now": true,
+      "hours": {
+        "Monday": "24 Hours",
+        "Tuesday": "24 Hours",
+        "Wednesday": "24 Hours",
+        "Thursday": "24 Hours",
+        "Friday": "24 Hours",
+        "Saturday": "24 Hours",
+        "Sunday": "24 Hours"
+      },
+      "holiday_note": null,
+      "specialties": [
+        "Gastroenterology",
+        "Cardiology",
+        "Neurology",
+        "Orthopedics",
+        "Pulmonology",
+        "Dermatology"
+      ],
+      "branches": [
+        {
+          "district": "Chennai",
+          "name": "Kauvery Hospital Alwarpet, Chennai",
+          "rating": 4.7,
+          "reviews_count": 5200,
+          "phone": "+91 44 4000 6000",
+          "address": "199 Luz Church Road, Alwarpet, Chennai 600004",
+          "open_now": true
+        },
+        {
+          "district": "Salem",
+          "name": "Kauvery Hospital, Salem",
+          "rating": 4.6,
+          "reviews_count": 2100,
+          "phone": "+91 427 400 6000",
+          "address": "Meyyanur Main Road, Salem 636004",
+          "open_now": true
+        },
+        {
+          "district": "Thanjavur",
+          "name": "Kauvery Medical Centre, Thanjavur",
+          "rating": 4.5,
+          "reviews_count": 920,
+          "phone": "+91 4362 230 000",
+          "address": "Medical College Road, Thanjavur 613007",
+          "open_now": true
+        }
+      ]
+    },
+    {
+      "id": "hosp-6",
+      "name": "Manipal Hospitals Salem",
+      "district": "Salem",
+      "taluk": "Salem South",
+      "address": "Dalmia Board, Bangalore Highway, Salem, Tamil Nadu 636012",
+      "rating": 4.6,
+      "reviews_count": 3410,
+      "phone": "+91 427 234 6666",
+      "website": "https://www.manipalhospitals.com/salem",
+      "open_now": true,
+      "hours": {
+        "Monday": "24 Hours",
+        "Tuesday": "24 Hours",
+        "Wednesday": "24 Hours",
+        "Thursday": "24 Hours",
+        "Friday": "24 Hours",
+        "Saturday": "24 Hours",
+        "Sunday": "24 Hours"
+      },
+      "holiday_note": null,
+      "specialties": [
+        "Cardiology",
+        "Neurology",
+        "Orthopedics",
+        "Dermatology",
+        "Gastroenterology",
+        "Endocrinology"
+      ],
+      "branches": [
+        {
+          "district": "Dharmapuri",
+          "name": "Manipal Consultation Centre, Dharmapuri",
+          "rating": 4.4,
+          "reviews_count": 290,
+          "phone": "+91 4342 260 100",
+          "address": "Pennagaram Main Rd, Dharmapuri 636701",
+          "open_now": true
+        },
+        {
+          "district": "Namakkal",
+          "name": "Manipal Diagnostic & Specialty Centre, Namakkal",
+          "rating": 4.5,
+          "reviews_count": 340,
+          "phone": "+91 4286 277 888",
+          "address": "Paramathi Road, Namakkal 637001",
+          "open_now": true
+        }
+      ]
+    },
+    {
+      "id": "hosp-7",
+      "name": "Tirunelveli Medical College Hospital",
+      "district": "Tirunelveli",
+      "taluk": "Palayamkottai",
+      "address": "High Ground, Palayamkottai, Tirunelveli, Tamil Nadu 627011",
+      "rating": 4.5,
+      "reviews_count": 2840,
+      "phone": "+91 462 257 2733",
+      "website": "http://www.tvmc.ac.in",
+      "open_now": true,
+      "hours": {
+        "Monday": "24 Hours Emergency (OPD 08:00 - 14:00)",
+        "Tuesday": "24 Hours Emergency (OPD 08:00 - 14:00)",
+        "Wednesday": "24 Hours Emergency (OPD 08:00 - 14:00)",
+        "Thursday": "24 Hours Emergency (OPD 08:00 - 14:00)",
+        "Friday": "24 Hours Emergency (OPD 08:00 - 14:00)",
+        "Saturday": "24 Hours Emergency (OPD 08:00 - 13:00)",
+        "Sunday": "24 Hours Emergency"
+      },
+      "holiday_note": "Hours differ from usual this week \u2014 state holiday observed for routine non-emergency OPD.",
+      "specialties": [
+        "General Medicine",
+        "Dermatology",
+        "Pulmonology",
+        "Pediatrics",
+        "Cardiology",
+        "Infectious Disease"
+      ],
+      "branches": [
+        {
+          "district": "Tenkasi",
+          "name": "Tenkasi Government District Headquarters Hospital",
+          "rating": 4.3,
+          "reviews_count": 910,
+          "phone": "+91 4633 222 345",
+          "address": "Courtallam Road, Tenkasi 627811",
+          "open_now": true
+        },
+        {
+          "district": "Thoothukudi",
+          "name": "Thoothukudi Government Medical College Hospital",
+          "rating": 4.4,
+          "reviews_count": 1650,
+          "phone": "+91 461 238 2144",
+          "address": "3rd Mile, Kamaraj Nagar, Thoothukudi 628008",
+          "open_now": true
+        },
+        {
+          "district": "Kanyakumari",
+          "name": "Kanyakumari Government Medical College Hospital, Asaripallam",
+          "rating": 4.5,
+          "reviews_count": 1820,
+          "phone": "+91 4652 223 201",
+          "address": "Asaripallam, Nagercoil, Kanyakumari 629201",
+          "open_now": true
+        }
+      ]
+    },
+    {
+      "id": "hosp-8",
+      "name": "Karpaga Vinayaga Institute of Medical Sciences",
+      "district": "Chengalpattu",
+      "taluk": "Madhuranthakam",
+      "address": "GST Road, Chinna Kolambakkam, Chengalpattu, Tamil Nadu 603308",
+      "rating": 4.5,
+      "reviews_count": 1950,
+      "phone": "+91 44 7156 5100",
+      "website": "https://kims.edu.in",
+      "open_now": true,
+      "hours": {
+        "Monday": "24 Hours",
+        "Tuesday": "24 Hours",
+        "Wednesday": "24 Hours",
+        "Thursday": "24 Hours",
+        "Friday": "24 Hours",
+        "Saturday": "24 Hours",
+        "Sunday": "24 Hours"
+      },
+      "holiday_note": null,
+      "specialties": [
+        "Dermatology",
+        "General Medicine",
+        "Cardiology",
+        "Neurology",
+        "Orthopedics"
+      ],
+      "branches": [
+        {
+          "district": "Kanchipuram",
+          "name": "Karpaga Vinayaga Health Centre, Kanchipuram",
+          "rating": 4.3,
+          "reviews_count": 480,
+          "phone": "+91 44 2722 3344",
+          "address": "Gandhi Road, Kanchipuram 631501",
+          "open_now": true
+        },
+        {
+          "district": "Tiruvallur",
+          "name": "Karpaga Vinayaga Outreach Clinic, Tiruvallur",
+          "rating": 4.2,
+          "reviews_count": 310,
+          "phone": "+91 44 2766 5544",
+          "address": "JN Road, Tiruvallur 602001",
+          "open_now": true
+        }
+      ]
+    },
+    {
+      "id": "hosp-9",
+      "name": "G. Kuppuswamy Naidu Memorial Hospital (GKNM)",
+      "district": "Coimbatore",
+      "taluk": "Coimbatore South",
+      "address": "Post Box No. 6327, P.N. Palayam, Coimbatore, Tamil Nadu 641037",
+      "rating": 4.8,
+      "reviews_count": 5120,
+      "phone": "+91 422 430 5300",
+      "website": "https://www.gknmhospital.org",
+      "open_now": true,
+      "hours": {
+        "Monday": "24 Hours",
+        "Tuesday": "24 Hours",
+        "Wednesday": "24 Hours",
+        "Thursday": "24 Hours",
+        "Friday": "24 Hours",
+        "Saturday": "24 Hours",
+        "Sunday": "24 Hours"
+      },
+      "holiday_note": null,
+      "specialties": [
+        "Cardiology",
+        "Pulmonology",
+        "Endocrinology",
+        "Dermatology",
+        "Pediatrics"
+      ],
+      "branches": [
+        {
+          "district": "Nilgiris",
+          "name": "GKNM Outreach Clinic Ooty",
+          "rating": 4.6,
+          "reviews_count": 380,
+          "phone": "+91 423 244 5566",
+          "address": "Commercial Road, Udhagamandalam, Nilgiris 643001",
+          "open_now": true
+        },
+        {
+          "district": "Tiruppur",
+          "name": "GKNM Medical Center Avinashi",
+          "rating": 4.5,
+          "reviews_count": 490,
+          "phone": "+91 4296 273 000",
+          "address": "Coimbatore-Salem Hwy, Avinashi 641654",
+          "open_now": true
+        }
+      ]
+    },
+    {
+      "id": "hosp-10",
+      "name": "Government Rajaji Hospital (Madurai Medical College)",
+      "district": "Madurai",
+      "taluk": "Madurai South",
+      "address": "Panagal Road, Alwarpuram, Madurai, Tamil Nadu 625020",
+      "rating": 4.4,
+      "reviews_count": 3450,
+      "phone": "+91 452 253 2535",
+      "website": "http://www.grhmdu.org",
+      "open_now": true,
+      "hours": {
+        "Monday": "24 Hours Emergency",
+        "Tuesday": "24 Hours Emergency",
+        "Wednesday": "24 Hours Emergency",
+        "Thursday": "24 Hours Emergency",
+        "Friday": "24 Hours Emergency",
+        "Saturday": "24 Hours Emergency",
+        "Sunday": "24 Hours Emergency"
+      },
+      "holiday_note": null,
+      "specialties": [
+        "General Medicine",
+        "Dermatology",
+        "Cardiology",
+        "Neurology",
+        "Infectious Disease",
+        "Pulmonology"
+      ],
+      "branches": [
+        {
+          "district": "Theni",
+          "name": "Government Theni Medical College Hospital, Kanavilakku",
+          "rating": 4.4,
+          "reviews_count": 1420,
+          "phone": "+91 4546 263 600",
+          "address": "Kanavilakku, Theni 625531",
+          "open_now": true
+        },
+        {
+          "district": "Virudhunagar",
+          "name": "Government Medical College Hospital, Virudhunagar",
+          "rating": 4.3,
+          "reviews_count": 870,
+          "phone": "+91 4562 244 100",
+          "address": "Collectorate Complex, Virudhunagar 626002",
+          "open_now": true
+        },
+        {
+          "district": "Ramanathapuram",
+          "name": "Government Medical College Hospital, Ramanathapuram",
+          "rating": 4.3,
+          "reviews_count": 920,
+          "phone": "+91 4567 230 400",
+          "address": "Kenikarai, Ramanathapuram 623501",
+          "open_now": true
+        }
+      ]
+    }
+  ]
+}

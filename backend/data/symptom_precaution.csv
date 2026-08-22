@@ -1,0 +1,74 @@
+Disease,Precaution_1,Precaution_2,Precaution_3,Precaution_4
+Fungal infection,stop open air bathing,use clean dry towels and clothing,apply antifungal powder/cream,consult dermatologist if symptoms persist
+Allergy,apply calamine lotion,avoid known allergens and dusty areas,use prescribed antihistamines,keep windows closed during high pollen counts
+GERD,avoid fatty and spicy foods,do not lie down immediately after eating,"eat smaller, frequent meals",elevate the head of your bed during sleep
+Chronic cholestasis,take cold baths to relieve itching,avoid alcohol and high fat foods,consult hepatologist promptly,eat anti-inflammatory and fiber-rich meals
+Drug Reaction,stop taking the suspected medication immediately,consult prescribing physician or emergency care,stay well hydrated,follow up with allergy testing
+Peptic ulcer diseae,avoid spicy and acidic foods,consume probiotic foods and yogurt,avoid NSAID pain relievers,take prescribed acid blockers as advised
+AIDS,avoid infected body fluids,adhere strictly to prescribed antiretroviral therapy,follow a nutritious high-protein diet,maintain strict personal hygiene to prevent infections
+Diabetes ,monitor blood sugar levels daily,exercise regularly for at least 30 minutes,maintain a low glycemic balanced diet,take prescribed insulin or oral hypoglycemics consistently
+Gastroenteritis,drink oral rehydration solutions (ORS),"eat bland foods like bananas, rice, and toast","avoid dairy, caffeine, and greasy meals",rest adequately and wash hands frequently
+Bronchial Asthma,use prescribed rescue and maintenance inhalers,"avoid cold air, dust, and smoke triggers",keep an asthma action plan ready,practice deep breathing exercises
+Hypertension ,reduce dietary sodium and salt intake,exercise and walk briskly for 30 minutes daily,manage stress through meditation or relaxation,take antihypertensive medications as prescribed
+Migraine,rest in a quiet and dark room,apply cold compresses to forehead or temples,stay well hydrated and maintain regular sleep schedules,avoid known food triggers like aged cheese or caffeine
+Cervical spondylosis,use an ergonomic cervical pillow,perform gentle neck stretching exercises,avoid prolonged downward head tilting on screens,consult a physiotherapist for posture alignment
+Paralysis (brain hemorrhage),seek immediate emergency neurological evaluation,begin physical and occupational rehabilitation,strictly control blood pressure levels,ensure safe swallowing and fall prevention
+Jaundice,"consume a light, easily digestible carbohydrate diet",drink plenty of boiled clean water and fresh fluids,"avoid oily, fried, and heavy foods completely",get regular liver function tests (LFT)
+Malaria,complete the full course of prescribed antimalarials,use mosquito nets and insect repellent,stay hydrated with electrolytes and soups,avoid water stagnation around living areas
+Chicken pox,apply soothing calamine lotion to blisters,do not scratch pox lesions to prevent secondary infection,take lukewarm oatmeal baths,isolate to avoid spreading virus to susceptible individuals
+Dengue,drink plenty of fluids and papaya leaf extract/ORS,avoid aspirin and NSAID painkillers (use paracetamol only),monitor platelet counts closely every 24 hours,seek hospitalization if bleeding or severe abdominal pain occurs
+Typhoid,"eat soft, bland, and easily digestible foods",drink only boiled and purified water,complete the entire course of prescribed antibiotics,wash hands thoroughly before eating
+hepatitis A,consult doctor for liver care protocol,"consume clean, hygienic boiled water and home-cooked food",avoid alcohol and hepatotoxic substances,rest adequately during acute phase
+Hepatitis B,consult a gastroenterologist/hepatologist,ensure family members receive Hepatitis B vaccination,"avoid sharing razors, toothbrushes, or needles",maintain regular viral load monitoring
+Hepatitis C,consult hepatologist for direct-acting antivirals,avoid alcohol completely,maintain a healthy liver-friendly diet,get regular hepatic ultrasounds and screenings
+Hepatitis D,follow hepatology specialist recommendations,treat underlying Hepatitis B infection diligently,avoid hepatotoxic medications,maintain high nutrition and hydration
+Hepatitis E,drink strictly boiled or filtered water,rest adequately and avoid strenuous physical exertion,maintain strict food and hand hygiene,monitor liver enzymes under medical supervision
+Alcoholic hepatitis,stop alcohol consumption completely and permanently,"consume high-protein, vitamin-rich nutritious meals",consult a hepatologist for liver regeneration care,participate in supportive rehabilitation programs
+Tuberculosis,cover mouth and nose with a mask when coughing,take full DOTS antibiotic regimen without missing any dose,"consume a high-calorie, protein-rich diet",ensure proper ventilation in living spaces
+Common Cold,"drink warm fluids, herbal teas, and soups",take steam inhalations with eucalyptus oil,get sufficient sleep and physical rest,use saline nasal drops for nasal congestion
+Pneumonia,seek prompt medical consultation and chest X-ray,complete prescribed antibiotic or antiviral therapy,rest in an upright position to ease breathing,stay well hydrated to help clear secretions
+Dimorphic hemmorhoids(piles),increase dietary fiber intake with fruits and vegetables,drink at least 2.5 to 3 liters of water daily,take warm sitz baths for 15 minutes twice daily,avoid straining during bowel movements
+Heart attack,call emergency medical services (108/911) immediately,chew an aspirin 300mg if not allergic while waiting,keep patient calm in a semi-upright seated position,avoid exertion or walking
+Varicose veins,wear graduated compression stockings,elevate legs above heart level when resting,avoid prolonged continuous standing or sitting,engage in low-impact leg exercises like walking and swimming
+Hypothyroidism,take levothyroxine hormone on an empty stomach in the morning,consume iodine and selenium adequate foods,engage in regular cardiovascular exercise,test TSH levels every 3 to 6 months
+Hyperthyroidism,take antithyroid medications consistently as prescribed,"avoid excessive caffeine, stimulants, and iodine supplements",consume adequate calories to offset high metabolism,monitor heart rate and thyroid panel regularly
+Hypoglycemia,consume 15-20g of fast-acting glucose (fruit juice/candy),recheck blood sugar levels after 15 minutes,eat a balanced complex carbohydrate snack once normalized,consult endocrinologist to adjust medication dosages
+Osteoarthristis,engage in low-impact joint exercises like swimming,maintain a healthy body weight to reduce joint load,apply warm or cold packs to painful joints,consult an orthopedic specialist for physical therapy
+Arthritis,perform gentle range-of-motion exercises daily,maintain anti-inflammatory diet rich in omega-3s,use supportive braces or walking aids if recommended,consult a rheumatologist for disease-modifying therapies
+(vertigo) Paroymsal  Positional Vertigo,perform Epley maneuver under specialist guidance,avoid sudden head movements and rapid standing,sit down immediately when sensation of spinning occurs,sleep with head slightly elevated on two pillows
+Acne,cleanse face gently twice daily with mild salicylic acid cleanser,avoid squeezing or picking at pimples,use non-comedogenic and oil-free skincare products,apply topical benzoyl peroxide or consult dermatologist
+Urinary tract infection,drink plenty of water (at least 3 liters daily),consume unsweetened cranberry juice or urinary alkalizers,complete the full course of prescribed antibiotics,do not hold urine for extended periods
+Psoriasis,apply prescribed topical moisturizers and corticosteroids,"get moderate, safe sun exposure under doctor guidance","avoid stress, alcohol, and skin injury triggers",consult a dermatologist for systemic or biologic treatments
+Impetigo,clean sores gently with antibacterial soap and warm water,apply prescribed mupirocin antibiotic ointment,keep affected area covered with sterile gauze,wash hands and patient's towels separately in hot water
+COVID-19,isolate in a well-ventilated room,monitor blood oxygen saturation (SpO2) every 6 hours,maintain high fluid intake and bed rest,consult doctor if SpO2 drops below 94%
+Appendicitis,seek immediate emergency surgical evaluation,do not consume food or water until evaluated,avoid taking laxatives or hot compresses,rest in a comfortable semi-Fowler position
+Kidney Stones,drink 3 to 4 liters of clean water daily,consult a urologist for non-contrast CT/ultrasound,reduce dietary sodium and high-oxalate foods,take prescribed stone dissolution medications
+Anemia,consume iron-rich foods like dark leafy greens and legumes,take oral iron supplements with Vitamin C,avoid tea or coffee during meal times,check complete blood count (CBC) regularly
+Influenza (Flu),get adequate physical rest and stay warm,drink electrolyte fluids and warm broths,take prescribed antiviral medication within 48 hours,cover mouth when sneezing and wear mask
+Gallstones,"avoid high-fat, deep-fried, and creamy foods",eat high-fiber meals with healthy lean proteins,seek emergency care if biliary pain exceeds 2 hours,consult general surgeon for ultrasound review
+Sinusitis,perform steam inhalation with eucalyptus oil twice daily,use saline nasal irrigation 3-4 times daily,stay hydrated to thin mucous secretions,apply warm compress over sinus areas
+Tonsillitis,gargle with warm salt water 4 times daily,drink warm soothing liquids like honey tea,"consume soft, non-irritating, easy-to-swallow foods",complete full course of prescribed antibiotics
+Acute Pancreatitis,seek emergency hospital admission immediately,refrain from oral food and alcohol intake,receive IV hydration and pain control in hospital,follow strict low-fat diet post-recovery
+Eczema,apply thick fragrance-free moisturizer after bathing,avoid harsh synthetic soaps and hot showers,wear soft breathable 100% cotton clothing,use prescribed topical corticosteroid during flare-ups
+Sciatica,apply cold/heat therapy packs to lower back,avoid prolonged sitting or heavy bending,perform gentle sciatic nerve glides under guidance,use ergonomic lumbar support pillow
+Gout,drink at least 3 liters of water daily,avoid purine-rich foods like red meat and organ meats,avoid alcohol and high-fructose corn syrup,elevate affected joint and apply ice during flare
+Chronic Kidney Disease,strictly monitor blood pressure and blood sugar,"reduce dietary salt, potassium, and protein intake",avoid over-the-counter NSAID painkillers,consult nephrologist for routine GFR evaluation
+Non-Alcoholic Fatty Liver Disease,engage in 150 minutes of weekly aerobic exercise,adopt a Mediterranean diet high in vegetables and fiber,gradually reduce 7-10% of total body weight,avoid refined sugars and sugary beverages
+Parkinson's Disease,engage in regular physical therapy and gait training,install bathroom grab bars and clear floor rugs,maintain high-fiber diet to prevent constipation,take dopaminergic medications strictly on schedule
+Meningitis,seek immediate emergency room evaluation,start IV broad-spectrum antibiotics without delay,isolate patient to prevent droplet transmission,ensure vaccination against bacterial meningitis
+Shingles,start oral antiviral therapy within 72 hours of rash,"keep blistering rash clean, cool, and dry",avoid contact with infants and pregnant women,apply cool compresses to soothe skin burning
+Conjunctivitis,avoid touching or rubbing infected eyes,wash hands frequently with soap and water,use separate clean towels and change pillowcases daily,discontinue contact lens wear until resolved
+COPD,stop smoking completely and avoid secondhand smoke,use daily maintenance and rescue bronchodilators,participate in pulmonary rehabilitation exercises,receive annual flu and pneumococcal vaccines
+Fibromyalgia,engage in regular low-impact aerobic exercise,maintain consistent sleep schedule and hygiene,practice mindfulness and stress management,pace physical activities to prevent exhaustion
+Otitis Media,keep affected ear completely dry during bathing,avoid inserting cotton swabs into ear canal,use warm compress on external ear for pain relief,complete full antibiotic course if prescribed
+Pulmonary Embolism,call emergency medical services (108/911) immediately,avoid long periods of continuous immobility,wear graduated compression stockings during travel,take anticoagulant blood thinners as prescribed
+Gastritis,"avoid NSAID painkillers, alcohol, and smoking","eat small, frequent, non-spicy balanced meals",avoid caffeine and acidic citrus beverages,take prescribed proton pump inhibitor before meals
+Systemic Lupus Erythematosus,wear broad-spectrum SPF 50+ sunscreen daily,get adequate rest to manage chronic fatigue,avoid direct sunlight and UV radiation exposure,monitor renal function with routine urinalysis
+Rabies,wash animal bite wounds with soap and running water for 15 min,receive rabies post-exposure prophylaxis (PEP) vaccine immediately,administer rabies immunoglobulin into wound site,vaccinate domestic dogs and cats regularly
+Tetanus,"clean dirty, puncture, or animal wounds thoroughly",receive Tetanus toxoid booster every 10 years,seek emergency care for deep contaminated wounds,administer Tetanus Immunoglobulin (TIG) if unimmunized
+Sepsis,seek emergency room care (108/911) immediately,receive IV broad-spectrum antibiotics within 1 hour,"monitor blood pressure, oxygen, and urine output",treat underlying source of infection promptly
+Endocarditis,maintain strict oral and dental hygiene,take prophylactic antibiotics before dental work if cardiac risk,seek prompt treatment for skin infections or boils,receive full IV antibiotic course in hospital
+Glaucoma,undergo comprehensive dilated eye exams regularly,instill intraocular pressure lowering eye drops daily,avoid inverted head-down exercise positions,protect eyes from physical trauma
+Cataract,wear UV-blocking polarized sunglasses outdoors,use bright directed task lighting for reading,maintain regular optometric prescription checks,consult ophthalmologist for phacoemulsification surgery
+Deep Vein Thrombosis,wear graduated medical compression stockings,avoid continuous prolonged standing or sitting,perform leg calf pump exercises while seated,take prescribed oral anticoagulant medications strictly
+Irritable Bowel Syndrome,follow a low-FODMAP diet under dietitian guidance,keep a food diary to identify specific symptom triggers,practice regular stress reduction and exercise,increase dietary soluble fiber gradually

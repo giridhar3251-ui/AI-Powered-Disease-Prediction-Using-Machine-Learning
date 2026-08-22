@@ -1,0 +1,166 @@
+{
+  "Fungal infection": {
+    "specialist": "Dermatologist",
+    "medicine_class": "Topical antifungal (e.g. Clotrimazole, Terbinafine)"
+  },
+  "Allergy": {
+    "specialist": "Allergist / Immunologist",
+    "medicine_class": "Antihistamine (e.g. Cetirizine, Fexofenadine)"
+  },
+  "GERD": {
+    "specialist": "Gastroenterologist",
+    "medicine_class": "Proton pump inhibitor (e.g. Omeprazole, Pantoprazole)"
+  },
+  "Chronic cholestasis": {
+    "specialist": "Hepatologist / Gastroenterologist",
+    "medicine_class": "Bile acid therapeutic (e.g. Ursodeoxycholic acid)"
+  },
+  "Drug Reaction": {
+    "specialist": "Dermatologist / Clinical Pharmacologist",
+    "medicine_class": "Corticosteroid & Antihistamine"
+  },
+  "Peptic ulcer diseae": {
+    "specialist": "Gastroenterologist",
+    "medicine_class": "H2 blocker / PPI & Mucosal protectant (e.g. Sucralfate)"
+  },
+  "AIDS": {
+    "specialist": "Infectious Disease Specialist",
+    "medicine_class": "Antiretroviral therapy (ART regimen)"
+  },
+  "Diabetes ": {
+    "specialist": "Endocrinologist",
+    "medicine_class": "Oral hypoglycemic / Insulin therapy (e.g. Metformin)"
+  },
+  "Gastroenteritis": {
+    "specialist": "Gastroenterologist / General Physician",
+    "medicine_class": "Electrolyte rehydration & Antimicrobial / Probiotic"
+  },
+  "Bronchial Asthma": {
+    "specialist": "Pulmonologist",
+    "medicine_class": "Inhaled bronchodilator & Corticosteroid (e.g. Salbutamol)"
+  },
+  "Hypertension ": {
+    "specialist": "Cardiologist",
+    "medicine_class": "Antihypertensive (e.g. ACE inhibitor, ARB, Beta-blocker)"
+  },
+  "Migraine": {
+    "specialist": "Neurologist",
+    "medicine_class": "Triptan & Prophylactic antimigraine (e.g. Sumatriptan)"
+  },
+  "Cervical spondylosis": {
+    "specialist": "Orthopedic Specialist / Spine Surgeon",
+    "medicine_class": "Muscle relaxant & NSAID analgesic"
+  },
+  "Paralysis (brain hemorrhage)": {
+    "specialist": "Neurologist / Neurosurgeon",
+    "medicine_class": "Neuroprotective & Osmotic diuretic / BP regulator"
+  },
+  "Jaundice": {
+    "specialist": "Hepatologist / Gastroenterologist",
+    "medicine_class": "Hepatoprotective agent & Supportive therapy"
+  },
+  "Malaria": {
+    "specialist": "Infectious Disease Specialist",
+    "medicine_class": "Artemisinin-based combination therapy (ACT)"
+  },
+  "Chicken pox": {
+    "specialist": "Infectious Disease Specialist / Pediatrician",
+    "medicine_class": "Antiviral (e.g. Acyclovir) & Calamine lotion"
+  },
+  "Dengue": {
+    "specialist": "Infectious Disease Specialist / General Physician",
+    "medicine_class": "Antipyretic (Paracetamol only) & Platelet support"
+  },
+  "Typhoid": {
+    "specialist": "Infectious Disease Specialist / General Physician",
+    "medicine_class": "Fluoroquinolone / Third-gen Cephalosporin"
+  },
+  "hepatitis A": {
+    "specialist": "Hepatologist",
+    "medicine_class": "Supportive rehydration & Hepatoprotective agent"
+  },
+  "Hepatitis B": {
+    "specialist": "Hepatologist",
+    "medicine_class": "Nucleoside reverse transcriptase inhibitor (e.g. Tenofovir)"
+  },
+  "Hepatitis C": {
+    "specialist": "Hepatologist",
+    "medicine_class": "Direct-acting antiviral (e.g. Sofosbuvir / Velpatasvir)"
+  },
+  "Hepatitis D": {
+    "specialist": "Hepatologist",
+    "medicine_class": "Pegylated interferon alpha"
+  },
+  "Hepatitis E": {
+    "specialist": "Hepatologist",
+    "medicine_class": "Supportive symptomatic therapy & Hydration"
+  },
+  "Alcoholic hepatitis": {
+    "specialist": "Hepatologist / Addiction Medicine Specialist",
+    "medicine_class": "Corticosteroid / Pentoxifylline & Nutritional support"
+  },
+  "Tuberculosis": {
+    "specialist": "Pulmonologist / Infectious Disease Specialist",
+    "medicine_class": "DOTS Quadruple regimen (Isoniazid, Rifampicin, Pyrazinamide, Ethambutol)"
+  },
+  "Common Cold": {
+    "specialist": "General Physician / ENT Specialist",
+    "medicine_class": "Decongestant & Antipyretic / Vitamin C"
+  },
+  "Pneumonia": {
+    "specialist": "Pulmonologist",
+    "medicine_class": "Broad-spectrum antibacterial (e.g. Amoxicillin-Clavulanate, Azithromycin)"
+  },
+  "Dimorphic hemmorhoids(piles)": {
+    "specialist": "General Surgeon / Proctologist",
+    "medicine_class": "Flavonoid venotonic & Topical anesthetic / Stool softener"
+  },
+  "Heart attack": {
+    "specialist": "Interventional Cardiologist (Emergency)",
+    "medicine_class": "Antiplatelet, Thrombolytic, Nitrate & Statin"
+  },
+  "Varicose veins": {
+    "specialist": "Vascular Surgeon",
+    "medicine_class": "Venoactive flavonoid (e.g. Micronized purified flavonoid fraction)"
+  },
+  "Hypothyroidism": {
+    "specialist": "Endocrinologist",
+    "medicine_class": "Synthetic thyroid hormone (Levothyroxine Sodium)"
+  },
+  "Hyperthyroidism": {
+    "specialist": "Endocrinologist",
+    "medicine_class": "Antithyroid agent (e.g. Methimazole, Carbimazole) & Beta-blocker"
+  },
+  "Hypoglycemia": {
+    "specialist": "Endocrinologist",
+    "medicine_class": "Fast-acting oral glucose / Glucagon injection"
+  },
+  "Osteoarthristis": {
+    "specialist": "Orthopedic Specialist / Rheumatologist",
+    "medicine_class": "Chondroprotective agent & Topical/Oral NSAID"
+  },
+  "Arthritis": {
+    "specialist": "Rheumatologist",
+    "medicine_class": "Disease-modifying antirheumatic drug (DMARD) & Anti-inflammatory"
+  },
+  "(vertigo) Paroymsal  Positional Vertigo": {
+    "specialist": "ENT Specialist / Neurologist",
+    "medicine_class": "Vestibular suppressant (e.g. Betahistine, Meclizine)"
+  },
+  "Acne": {
+    "specialist": "Dermatologist",
+    "medicine_class": "Topical retinoid & Benzoyl peroxide / Clindamycin"
+  },
+  "Urinary tract infection": {
+    "specialist": "Urologist / Nephrologist",
+    "medicine_class": "Urinary antimicrobial (e.g. Nitrofurantoin, Fosfomycin) & Alkalizer"
+  },
+  "Psoriasis": {
+    "specialist": "Dermatologist",
+    "medicine_class": "Topical corticosteroid, Calcipotriol & Biologic agent"
+  },
+  "Impetigo": {
+    "specialist": "Dermatologist / Pediatrician",
+    "medicine_class": "Topical antibiotic ointment (e.g. Mupirocin, Fusidic acid)"
+  }
+}
