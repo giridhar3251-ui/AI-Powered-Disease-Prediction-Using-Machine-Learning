@@ -209,3 +209,4 @@ On your own machine (with internet access and ideally a GPU), you can do meaning
 - Add a confidence threshold below which the UI recommends "insufficient symptoms — consult
   a doctor" instead of a specific disease.
 - Combine both modes: use image prediction to suggest likely symptoms to check off.
+"# AI-Powered-Disease-Prediction-Using-Machine-Learning-1" 
