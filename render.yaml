@@ -4,7 +4,7 @@ services:
     name: disease-predictor-backend
     env: python
     rootDir: .
-    buildCommand: npm run build && cd backend && pip install -r requirements.txt
+    buildCommand: chmod +x build.sh && ./build.sh
     startCommand: cd backend && uvicorn index:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: PYTHON_VERSION
