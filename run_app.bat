@@ -2,7 +2,7 @@
 setlocal EnableExtensions
 
 set "ROOT=%~dp0"
-set "BACKEND_DIR=%ROOT%api"
+set "BACKEND_DIR=%ROOT%backend"
 set "FRONTEND_DIR=%ROOT%frontend"
 set "BACKEND_PORT=8000"
 set "FRONTEND_PORT=5174"
