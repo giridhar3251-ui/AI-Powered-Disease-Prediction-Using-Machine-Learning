@@ -10,6 +10,8 @@ from PIL import Image
 from typing import List, Optional, Dict, Any
 from fastapi import FastAPI, HTTPException, UploadFile, File, Query
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
 
@@ -35,6 +37,13 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Serve Frontend Static Assets
+FRONTEND_BUILD_DIR = os.path.join(BASE_DIR, "..", "build")
+if os.path.isdir(os.path.join(FRONTEND_BUILD_DIR, "assets")):
+    app.mount("/assets", StaticFiles(directory=os.path.join(FRONTEND_BUILD_DIR, "assets")), name="assets")
+elif os.path.isdir(os.path.join(BASE_DIR, "frontend", "dist", "assets")): # Fallback just in case
+    app.mount("/assets", StaticFiles(directory=os.path.join(BASE_DIR, "frontend", "dist", "assets")), name="assets")
 
 # Load data assets
 def load_json(filename: str, default: Any) -> Any:
@@ -625,4 +634,19 @@ def register(req: RegisterRequest):
             "avatar": new_user["avatar"]
         }
     }
+
+
+# Catch-all route to serve the React index.html
+@app.get("/{full_path:path}")
+def serve_frontend(full_path: str):
+    index_path = os.path.join(FRONTEND_BUILD_DIR, "index.html")
+    if not os.path.exists(index_path):
+        # Fallback if build is in frontend/dist
+        fallback_path = os.path.join(BASE_DIR, "frontend", "dist", "index.html")
+        if os.path.exists(fallback_path):
+            index_path = fallback_path
+    
+    if os.path.exists(index_path):
+        return FileResponse(index_path)
+    return {"error": "Frontend build not found. Please run 'npm run build' in the root directory."}
 

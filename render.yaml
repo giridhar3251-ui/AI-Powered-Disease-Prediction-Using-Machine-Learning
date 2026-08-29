@@ -1,31 +1,13 @@
 services:
-  # 1. Backend Web Service
+  # 1. Unified Web Service (Backend + Frontend)
   - type: web
     name: disease-predictor-backend
     env: python
-    rootDir: backend
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn index:app --host 0.0.0.0 --port $PORT
+    rootDir: .
+    buildCommand: npm run build && cd backend && pip install -r requirements.txt
+    startCommand: cd backend && uvicorn index:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: PYTHON_VERSION
         value: 3.10.0
       - key: GOOGLE_PLACES_API_KEY
         sync: false # You will enter this securely in the Render Dashboard
-
-  # 2. Frontend Static Site
-  - type: web
-    name: disease-predictor-frontend
-    env: static
-    rootDir: frontend
-    buildCommand: npm install && npm run build
-    staticPublishPath: dist
-    envVars:
-      - key: VITE_API_BASE
-        fromService:
-          type: web
-          name: disease-predictor-backend
-          envVarKey: RENDER_EXTERNAL_URL
-    routes:
-      - type: rewrite
-        source: /*
-        destination: /index.html
