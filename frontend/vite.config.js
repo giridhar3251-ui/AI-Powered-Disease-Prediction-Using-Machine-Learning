@@ -8,5 +8,8 @@ export default defineConfig({
     port: 5174,
     host: '0.0.0.0',
     https: true,
+  },
+  build: {
+    outDir: 'build'
   }
 });
