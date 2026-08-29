@@ -455,8 +455,15 @@ def search_hospitals(
         # If "All Districts" or empty, match is True.
         is_all_districts = not target_district or target_district == "all districts" or target_district == "all districts (tamil nadu)"
         
-        # Match specialty
-        match_spec = not target_spec or any(target_spec in s.lower() for s in h.get("specialties", []))
+        # Match specialty with fuzzy root matching (e.g. Cardiologist matches Cardiology)
+        def fuzzy_match(q, t):
+            q, t = q.lower(), t.lower()
+            if q in t or t in q: return True
+            # Check root of the word (first 6 chars) if it's a long enough word
+            if len(q) > 5 and q[:6] in t: return True
+            return False
+            
+        match_spec = not target_spec or any(fuzzy_match(target_spec, s) for s in h.get("specialties", []))
         
         if not match_spec:
             continue
