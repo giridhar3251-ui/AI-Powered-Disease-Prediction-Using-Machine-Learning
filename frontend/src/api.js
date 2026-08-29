@@ -2,11 +2,14 @@ const API_BASE = import.meta.env.VITE_API_BASE || (import.meta.env.PROD ? '' : '
 
 async function safeJson(res) {
   const text = await res.text();
+  if (!text || text.trim() === '') {
+    throw new Error(`Server returned an empty response (Status ${res.status}). Ensure backend is connected.`);
+  }
   try {
-    return text ? JSON.parse(text) : {};
+    return JSON.parse(text);
   } catch (e) {
     console.error("API response is not valid JSON. Status:", res.status, "Body:", text);
-    throw new Error(`Server returned invalid data (Status ${res.status}). Please check backend logs.`);
+    throw new Error(`Server returned invalid data (Status ${res.status}). Ensure VITE_API_BASE is set correctly.`);
   }
 }
 
