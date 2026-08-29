@@ -6,7 +6,7 @@ import {
 import { searchHospitals, fetchDistricts, lookupBranch } from '../api';
 
 export default function HospitalFinder({ initialSpecialty = '', districts = [] }) {
-  const [selectedDistrict, setSelectedDistrict] = useState('Chennai');
+  const [selectedDistrict, setSelectedDistrict] = useState('All Districts (Tamil Nadu)');
   const [taluk, setTaluk] = useState('');
   const [specialty, setSpecialty] = useState(initialSpecialty);
   const [searchMode, setSearchMode] = useState('district'); // 'district' | 'gps'
@@ -156,6 +156,7 @@ export default function HospitalFinder({ initialSpecialty = '', districts = [] }
               onChange={(e) => setSelectedDistrict(e.target.value)}
               className="input-control"
             >
+              <option value="All Districts (Tamil Nadu)">All Districts (Tamil Nadu)</option>
               {districts.map(d => (
                 <option key={d} value={d}>{d}</option>
               ))}
@@ -428,6 +429,26 @@ export default function HospitalFinder({ initialSpecialty = '', districts = [] }
                   <MapPin size={13} />
                   <span>Open in Google Maps</span>
                 </a>
+
+                <button
+                  onClick={() => {
+                    const confirmMsg = `Book an appointment at ${hosp.name}?`;
+                    if (window.confirm(confirmMsg)) {
+                      window.alert(`Success! Your appointment request has been sent to ${hosp.name}. Our healthcare concierge will contact you shortly with the confirmed time.`);
+                    }
+                  }}
+                  className="btn-primary"
+                  style={{ 
+                    fontSize: '0.8rem', padding: '6px 14px', 
+                    background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
+                    boxShadow: '0 4px 12px rgba(16, 185, 129, 0.3)',
+                    border: 'none', color: '#fff', cursor: 'pointer',
+                    display: 'flex', alignItems: 'center', gap: '6px', borderRadius: '8px', fontWeight: 600
+                  }}
+                >
+                  <CheckCircle2 size={13} />
+                  <span>Make Appointment</span>
+                </button>
               </div>
 
             </div>

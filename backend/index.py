@@ -452,30 +452,45 @@ def search_hospitals(
     target_spec = (specialty or "").strip().lower()
 
     for h in all_hospitals:
-        # Match district or check if hospital has branches in the requested district
-        match_district = not target_district or target_district in h.get("district", "").lower()
+        # If "All Districts" or empty, match is True.
+        is_all_districts = not target_district or target_district == "all districts" or target_district == "all districts (tamil nadu)"
         
         # Match specialty
         match_spec = not target_spec or any(target_spec in s.lower() for s in h.get("specialties", []))
         
-        # Check branches if main facility doesn't directly match
-        matched_via_branch = False
-        if not match_district and target_district:
-            for b in h.get("branches", []):
-                if target_district in b.get("district", "").lower():
-                    matched_via_branch = True
-                    break
-
-        if (match_district or matched_via_branch) and match_spec:
+        if not match_spec:
+            continue
+            
+        if is_all_districts:
+            # Add the main hospital
             card = dict(h)
             card["maps_url"] = f"https://www.google.com/maps/search/?api=1&query={h['name'].replace(' ', '+')}+{h['district']}"
             filtered.append(card)
-
-    # If no exact match found, provide top multi-specialty recommendations in nearby major centers
-    if not filtered and all_hospitals:
-        filtered = [dict(h) for h in all_hospitals[:4]]
-        for item in filtered:
-            item["maps_url"] = f"https://www.google.com/maps/search/?api=1&query={item['name'].replace(' ', '+')}"
+            
+            # Add all branches as standalone hospitals
+            for b_idx, b in enumerate(h.get("branches", [])):
+                b_card = dict(b)
+                b_card["id"] = f"{h['id']}-branch-{b_idx}"
+                b_card["specialties"] = h.get("specialties", [])
+                b_card["maps_url"] = f"https://www.google.com/maps/search/?api=1&query={b['name'].replace(' ', '+')}+{b['district']}"
+                filtered.append(b_card)
+        else:
+            # Match specific district
+            match_main = target_district in h.get("district", "").lower()
+            
+            if match_main:
+                card = dict(h)
+                card["maps_url"] = f"https://www.google.com/maps/search/?api=1&query={h['name'].replace(' ', '+')}+{h['district']}"
+                filtered.append(card)
+            
+            # Check branches for the target district
+            for b_idx, b in enumerate(h.get("branches", [])):
+                if target_district in b.get("district", "").lower():
+                    b_card = dict(b)
+                    b_card["id"] = f"{h['id']}-branch-{b_idx}"
+                    b_card["specialties"] = h.get("specialties", [])
+                    b_card["maps_url"] = f"https://www.google.com/maps/search/?api=1&query={b['name'].replace(' ', '+')}+{b['district']}"
+                    filtered.append(b_card)
 
     # Sort best-reviewed first (Rating desc, Reviews count desc)
     filtered.sort(key=lambda x: (x.get("rating", 0), x.get("reviews_count", 0)), reverse=True)
@@ -487,6 +502,7 @@ def search_hospitals(
         "google_places_configured": bool(GOOGLE_PLACES_API_KEY.strip()),
         "total": len(filtered),
         "results": filtered
+
     }
 
 @app.get("/api/hospitals/{hospital_id}/branch-lookup")
