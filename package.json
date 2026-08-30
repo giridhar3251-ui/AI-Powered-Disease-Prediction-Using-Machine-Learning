@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "rm -f package-lock.json && rm -f frontend/package-lock.json && cd frontend && npm install && npm run build"
+    "build": "npx rimraf package-lock.json frontend/package-lock.json && cd frontend && npm install && npm run build"
   }
 }
