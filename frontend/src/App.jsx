@@ -171,8 +171,8 @@ export default function App() {
         {currentUser && (
           <div style={{
             marginBottom: '20px',
-            background: 'linear-gradient(90deg, rgba(6, 182, 212, 0.1) 0%, rgba(59, 130, 246, 0.05) 100%)',
-            border: '1px solid rgba(6, 182, 212, 0.25)',
+            background: 'linear-gradient(90deg, rgba(14, 165, 233, 0.1) 0%, rgba(2, 132, 199, 0.05) 100%)',
+            border: '1px solid rgba(14, 165, 233, 0.25)',
             borderRadius: '14px',
             padding: '12px 20px',
             display: 'flex',
@@ -184,7 +184,7 @@ export default function App() {
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <div style={{
                 width: '36px', height: '36px', borderRadius: '10px',
-                background: 'rgba(6, 182, 212, 0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center'
+                background: 'rgba(14, 165, 233, 0.2)', display: 'flex', alignItems: 'center', justifyContent: 'center'
               }}>
                 <HeartPulse size={20} color="#22d3ee" />
               </div>
@@ -194,7 +194,7 @@ export default function App() {
                     Welcome, {currentUser.name}
                   </span>
                   <span style={{
-                    fontSize: '0.68rem', fontWeight: 700, background: 'rgba(6, 182, 212, 0.2)',
+                    fontSize: '0.68rem', fontWeight: 700, background: 'rgba(14, 165, 233, 0.2)',
                     color: '#22d3ee', padding: '2px 8px', borderRadius: '4px', textTransform: 'uppercase'
                   }}>
                     {currentUser.role} Portal Active
@@ -249,10 +249,10 @@ export default function App() {
                 }}>
                   <div style={{
                     width: '64px', height: '64px', borderRadius: '20px',
-                    background: 'rgba(6, 182, 212, 0.1)', border: '1px solid rgba(6, 182, 212, 0.25)',
+                    background: 'rgba(14, 165, 233, 0.1)', border: '1px solid rgba(14, 165, 233, 0.25)',
                     display: 'flex', alignItems: 'center', justifyContent: 'center'
                   }}>
-                    <Stethoscope size={32} color="#06b6d4" />
+                    <Stethoscope size={32} color="#0EA5E9" />
                   </div>
                   <div>
                     <h3 style={{ fontSize: '1.2rem', fontWeight: 700, color: '#f8fafc' }}>
@@ -292,10 +292,10 @@ export default function App() {
                 }}>
                   <div style={{
                     width: '64px', height: '64px', borderRadius: '20px',
-                    background: 'rgba(6, 182, 212, 0.1)', border: '1px solid rgba(6, 182, 212, 0.25)',
+                    background: 'rgba(14, 165, 233, 0.1)', border: '1px solid rgba(14, 165, 233, 0.25)',
                     display: 'flex', alignItems: 'center', justifyContent: 'center'
                   }}>
-                    <Sparkles size={32} color="#06b6d4" />
+                    <Sparkles size={32} color="#0EA5E9" />
                   </div>
                   <div>
                     <h3 style={{ fontSize: '1.2rem', fontWeight: 700, color: '#f8fafc' }}>

@@ -451,6 +451,13 @@ def search_hospitals(
     target_taluk = (taluk or "").strip().lower()
     target_spec = (specialty or "").strip().lower()
 
+    # Intelligent Disease-to-Specialty Mapping
+    for disease, data in SPECIALIST_MAP.items():
+        if disease.lower() == target_spec:
+            # Extract primary specialist (e.g., 'Hepatologist / Addiction Medicine Specialist' -> 'Hepatologist')
+            target_spec = data.get("specialist", "").split("/")[0].strip().lower()
+            break
+
     for h in all_hospitals:
         # If "All Districts" or empty, match is True.
         is_all_districts = not target_district or target_district == "all districts" or target_district == "all districts (tamil nadu)"
@@ -503,6 +510,27 @@ def search_hospitals(
     filtered.sort(key=lambda x: (x.get("rating", 0), x.get("reviews_count", 0)), reverse=True)
     if filtered:
         filtered[0]["is_top_rated"] = True
+        
+    if not filtered and not is_all_districts:
+        for h in all_hospitals:
+            match_main = target_district in h.get("district", "").lower()
+            
+            if match_main:
+                card = dict(h)
+                card["maps_url"] = f"https://www.google.com/maps/search/?api=1&query={h['name'].replace(' ', '+')}+{h['district']}"
+                filtered.append(card)
+            
+            for b_idx, b in enumerate(h.get("branches", [])):
+                if target_district in b.get("district", "").lower():
+                    b_card = dict(b)
+                    b_card["id"] = f"{h['id']}-branch-{b_idx}"
+                    b_card["specialties"] = h.get("specialties", [])
+                    b_card["maps_url"] = f"https://www.google.com/maps/search/?api=1&query={b['name'].replace(' ', '+')}+{b['district']}"
+                    filtered.append(b_card)
+
+        filtered.sort(key=lambda x: (x.get("rating", 0), x.get("reviews_count", 0)), reverse=True)
+        if filtered:
+            filtered[0]["is_top_rated"] = True
 
     return {
         "source": "Tamil Nadu Healthcare Provider Directory",

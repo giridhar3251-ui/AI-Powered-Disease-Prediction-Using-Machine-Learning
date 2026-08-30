@@ -24,8 +24,8 @@ export default function ImageResultsPanel({ result, imagePreview, onFindDermatol
       <div className="glass-panel" style={{
         padding: '28px',
         background: 'linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(13, 31, 58, 0.9) 100%)',
-        border: '1px solid rgba(6, 182, 212, 0.35)',
-        boxShadow: '0 12px 40px -10px rgba(6, 182, 212, 0.25)',
+        border: '1px solid rgba(14, 165, 233, 0.35)',
+        boxShadow: '0 12px 40px -10px rgba(14, 165, 233, 0.25)',
         display: 'flex',
         flexDirection: 'column',
         gap: '24px'
@@ -35,15 +35,15 @@ export default function ImageResultsPanel({ result, imagePreview, onFindDermatol
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <span style={{
-              background: 'linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%)',
+              background: 'linear-gradient(135deg, #0EA5E9 0%, #0284C7 100%)',
               color: '#ffffff', fontSize: '0.75rem', fontWeight: 800, padding: '4px 10px',
               borderRadius: '6px', textTransform: 'uppercase', letterSpacing: '0.05em'
             }}>
               Dermatological Evaluation
             </span>
             <span style={{
-              background: 'rgba(59, 130, 246, 0.15)', color: '#93c5fd',
-              border: '1px solid rgba(59, 130, 246, 0.3)', fontSize: '0.75rem', fontWeight: 700, padding: '4px 10px', borderRadius: '6px'
+              background: 'rgba(2, 132, 199, 0.15)', color: '#93c5fd',
+              border: '1px solid rgba(2, 132, 199, 0.3)', fontSize: '0.75rem', fontWeight: 700, padding: '4px 10px', borderRadius: '6px'
             }}>
               {category}
             </span>
@@ -56,7 +56,7 @@ export default function ImageResultsPanel({ result, imagePreview, onFindDermatol
                 className="btn-secondary"
                 style={{ fontSize: '0.85rem', padding: '8px 14px' }}
               >
-                <Camera size={16} color="#06b6d4" />
+                <Camera size={16} color="#0EA5E9" />
                 <span>Capture Another Image</span>
               </button>
             )}
@@ -79,8 +79,8 @@ export default function ImageResultsPanel({ result, imagePreview, onFindDermatol
             <div style={{ display: 'flex', justifyContent: 'center' }}>
               <div style={{
                 position: 'relative', width: '220px', height: '220px', borderRadius: '16px',
-                overflow: 'hidden', border: '2px solid rgba(6, 182, 212, 0.4)',
-                boxShadow: '0 0 20px rgba(6, 182, 212, 0.2)'
+                overflow: 'hidden', border: '2px solid rgba(14, 165, 233, 0.4)',
+                boxShadow: '0 0 20px rgba(14, 165, 233, 0.2)'
               }}>
                 <img
                   src={imagePreview}
@@ -106,7 +106,7 @@ export default function ImageResultsPanel({ result, imagePreview, onFindDermatol
                   {title}
                 </h2>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginTop: '6px' }}>
-                  <UserCheck size={16} color="#06b6d4" />
+                  <UserCheck size={16} color="#0EA5E9" />
                   <span style={{ fontSize: '0.85rem', color: '#cbd5e1' }}>
                     Consult: <strong style={{ color: '#ffffff' }}>{specialist}</strong>
                   </span>
@@ -127,7 +127,7 @@ export default function ImageResultsPanel({ result, imagePreview, onFindDermatol
           flexDirection: 'column',
           gap: '12px'
         }}>
-          <span style={{ fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', color: '#06b6d4', letterSpacing: '0.05em' }}>
+          <span style={{ fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', color: '#0EA5E9', letterSpacing: '0.05em' }}>
             Class Probability Distribution
           </span>
 
@@ -142,7 +142,7 @@ export default function ImageResultsPanel({ result, imagePreview, onFindDermatol
                   <div style={{
                     width: `${Math.max(3, val)}%`,
                     height: '100%',
-                    background: 'linear-gradient(90deg, #06b6d4, #3b82f6)',
+                    background: 'linear-gradient(90deg, #0EA5E9, #0284C7)',
                     borderRadius: '3px',
                     transition: 'width 0.8s ease'
                   }} />
@@ -160,7 +160,7 @@ export default function ImageResultsPanel({ result, imagePreview, onFindDermatol
         {/* Recommended Skincare Protocol */}
         <div className="glass-panel" style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
           <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: '#f8fafc', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <Sparkles size={18} color="#06b6d4" />
+            <Sparkles size={18} color="#0EA5E9" />
             <span>Targeted Skincare Guidance</span>
           </h3>
 

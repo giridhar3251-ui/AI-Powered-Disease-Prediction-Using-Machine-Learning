@@ -69,12 +69,12 @@ export default function LoginPage({ onLoginSuccess, onContinueAsGuest }) {
       {/* Decorative Glow Orbs */}
       <div style={{
         position: 'absolute', top: '-10%', left: '15%', width: '500px', height: '500px',
-        background: 'radial-gradient(circle, rgba(6, 182, 212, 0.12) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(14, 165, 233, 0.12) 0%, transparent 70%)',
         borderRadius: '50%', pointerEvents: 'none'
       }} />
       <div style={{
         position: 'absolute', bottom: '-10%', right: '15%', width: '500px', height: '500px',
-        background: 'radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, transparent 70%)',
+        background: 'radial-gradient(circle, rgba(2, 132, 199, 0.12) 0%, transparent 70%)',
         borderRadius: '50%', pointerEvents: 'none'
       }} />
 
@@ -87,7 +87,7 @@ export default function LoginPage({ onLoginSuccess, onContinueAsGuest }) {
         background: 'rgba(15, 23, 42, 0.85)',
         backdropFilter: 'blur(20px)',
         border: '1px solid rgba(255, 255, 255, 0.1)',
-        boxShadow: '0 25px 60px -15px rgba(0, 0, 0, 0.7), 0 0 40px rgba(6, 182, 212, 0.15)',
+        boxShadow: '0 25px 60px -15px rgba(0, 0, 0, 0.7), 0 0 40px rgba(14, 165, 233, 0.15)',
         overflow: 'hidden'
       }}>
         
@@ -106,15 +106,15 @@ export default function LoginPage({ onLoginSuccess, onContinueAsGuest }) {
             <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '28px' }}>
               <div style={{
                 width: '46px', height: '46px', borderRadius: '14px',
-                background: 'linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%)',
+                background: 'linear-gradient(135deg, #0EA5E9 0%, #0284C7 100%)',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                boxShadow: '0 0 24px rgba(6, 182, 212, 0.4)'
+                boxShadow: '0 0 24px rgba(14, 165, 233, 0.4)'
               }}>
                 <Activity size={26} color="#ffffff" strokeWidth={2.5} />
               </div>
               <div>
                 <h1 style={{ fontSize: '1.4rem', fontWeight: 800, color: '#f8fafc', letterSpacing: '-0.02em' }}>
-                  Aegis<span style={{ color: '#06b6d4' }}>Med</span> AI
+                  Aegis<span style={{ color: '#0EA5E9' }}>Med</span> AI
                 </h1>
                 <span style={{ fontSize: '0.72rem', color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>
                   Clinical Intelligence Portal
@@ -139,10 +139,10 @@ export default function LoginPage({ onLoginSuccess, onContinueAsGuest }) {
                 <div key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                   <div style={{
                     width: '24px', height: '24px', borderRadius: '6px',
-                    background: 'rgba(6, 182, 212, 0.15)', border: '1px solid rgba(6, 182, 212, 0.3)',
+                    background: 'rgba(14, 165, 233, 0.15)', border: '1px solid rgba(14, 165, 233, 0.3)',
                     display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, marginTop: '2px'
                   }}>
-                    <CheckCircle2 size={14} color="#06b6d4" />
+                    <CheckCircle2 size={14} color="#0EA5E9" />
                   </div>
                   <div>
                     <h4 style={{ fontSize: '0.85rem', fontWeight: 700, color: '#f1f5f9' }}>{f.title}</h4>
@@ -176,7 +176,7 @@ export default function LoginPage({ onLoginSuccess, onContinueAsGuest }) {
               style={{
                 flex: 1, padding: '8px 16px', borderRadius: '8px', border: 'none', cursor: 'pointer',
                 fontSize: '0.85rem', fontWeight: 700,
-                background: mode === 'login' ? 'linear-gradient(135deg, #06b6d4, #2563eb)' : 'transparent',
+                background: mode === 'login' ? 'linear-gradient(135deg, #0EA5E9, #0369A1)' : 'transparent',
                 color: mode === 'login' ? '#ffffff' : '#94a3b8',
                 transition: 'all 0.2s ease'
               }}
@@ -188,7 +188,7 @@ export default function LoginPage({ onLoginSuccess, onContinueAsGuest }) {
               style={{
                 flex: 1, padding: '8px 16px', borderRadius: '8px', border: 'none', cursor: 'pointer',
                 fontSize: '0.85rem', fontWeight: 700,
-                background: mode === 'register' ? 'linear-gradient(135deg, #06b6d4, #2563eb)' : 'transparent',
+                background: mode === 'register' ? 'linear-gradient(135deg, #0EA5E9, #0369A1)' : 'transparent',
                 color: mode === 'register' ? '#ffffff' : '#94a3b8',
                 transition: 'all 0.2s ease'
               }}
@@ -199,8 +199,8 @@ export default function LoginPage({ onLoginSuccess, onContinueAsGuest }) {
 
           {/* Quick Demo Access Bar */}
           <div style={{
-            background: 'rgba(6, 182, 212, 0.08)',
-            border: '1px solid rgba(6, 182, 212, 0.25)',
+            background: 'rgba(14, 165, 233, 0.08)',
+            border: '1px solid rgba(14, 165, 233, 0.25)',
             borderRadius: '12px',
             padding: '14px 16px',
             display: 'flex',
@@ -208,7 +208,7 @@ export default function LoginPage({ onLoginSuccess, onContinueAsGuest }) {
             gap: '8px'
           }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <Sparkles size={14} color="#06b6d4" />
+              <Sparkles size={14} color="#0EA5E9" />
               <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#22d3ee', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                 Instant 1-Click Demo Login
               </span>
@@ -220,15 +220,15 @@ export default function LoginPage({ onLoginSuccess, onContinueAsGuest }) {
                 onClick={() => handleQuickDemoLogin('Clinician')}
                 disabled={loading}
                 style={{
-                  background: 'rgba(15, 23, 42, 0.8)', border: '1px solid rgba(6, 182, 212, 0.3)',
+                  background: 'rgba(15, 23, 42, 0.8)', border: '1px solid rgba(14, 165, 233, 0.3)',
                   color: '#e2e8f0', padding: '8px 10px', borderRadius: '8px', fontSize: '0.75rem', fontWeight: 600,
                   cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px',
                   transition: 'all 0.2s ease'
                 }}
-                onMouseEnter={(e) => e.currentTarget.style.borderColor = '#06b6d4'}
-                onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgba(6, 182, 212, 0.3)'}
+                onMouseEnter={(e) => e.currentTarget.style.borderColor = '#0EA5E9'}
+                onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgba(14, 165, 233, 0.3)'}
               >
-                <Stethoscope size={13} color="#06b6d4" />
+                <Stethoscope size={13} color="#0EA5E9" />
                 <span>Dr. Sarah Mitchell</span>
               </button>
 
@@ -237,15 +237,15 @@ export default function LoginPage({ onLoginSuccess, onContinueAsGuest }) {
                 onClick={() => handleQuickDemoLogin('Patient')}
                 disabled={loading}
                 style={{
-                  background: 'rgba(15, 23, 42, 0.8)', border: '1px solid rgba(59, 130, 246, 0.3)',
+                  background: 'rgba(15, 23, 42, 0.8)', border: '1px solid rgba(2, 132, 199, 0.3)',
                   color: '#e2e8f0', padding: '8px 10px', borderRadius: '8px', fontSize: '0.75rem', fontWeight: 600,
                   cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px',
                   transition: 'all 0.2s ease'
                 }}
-                onMouseEnter={(e) => e.currentTarget.style.borderColor = '#3b82f6'}
-                onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgba(59, 130, 246, 0.3)'}
+                onMouseEnter={(e) => e.currentTarget.style.borderColor = '#0284C7'}
+                onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgba(2, 132, 199, 0.3)'}
               >
-                <User size={13} color="#3b82f6" />
+                <User size={13} color="#0284C7" />
                 <span>Alex (Patient)</span>
               </button>
             </div>
@@ -261,8 +261,8 @@ export default function LoginPage({ onLoginSuccess, onContinueAsGuest }) {
                 onClick={() => setRole('Clinician')}
                 style={{
                   padding: '10px 12px', borderRadius: '10px', cursor: 'pointer',
-                  border: role === 'Clinician' ? '1px solid #06b6d4' : '1px solid rgba(255, 255, 255, 0.08)',
-                  background: role === 'Clinician' ? 'rgba(6, 182, 212, 0.15)' : 'rgba(30, 41, 59, 0.4)',
+                  border: role === 'Clinician' ? '1px solid #0EA5E9' : '1px solid rgba(255, 255, 255, 0.08)',
+                  background: role === 'Clinician' ? 'rgba(14, 165, 233, 0.15)' : 'rgba(30, 41, 59, 0.4)',
                   display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.2s ease'
                 }}
               >
@@ -277,8 +277,8 @@ export default function LoginPage({ onLoginSuccess, onContinueAsGuest }) {
                 onClick={() => setRole('Patient')}
                 style={{
                   padding: '10px 12px', borderRadius: '10px', cursor: 'pointer',
-                  border: role === 'Patient' ? '1px solid #3b82f6' : '1px solid rgba(255, 255, 255, 0.08)',
-                  background: role === 'Patient' ? 'rgba(59, 130, 246, 0.15)' : 'rgba(30, 41, 59, 0.4)',
+                  border: role === 'Patient' ? '1px solid #0284C7' : '1px solid rgba(255, 255, 255, 0.08)',
+                  background: role === 'Patient' ? 'rgba(2, 132, 199, 0.15)' : 'rgba(30, 41, 59, 0.4)',
                   display: 'flex', alignItems: 'center', gap: '8px', transition: 'all 0.2s ease'
                 }}
               >
@@ -340,7 +340,7 @@ export default function LoginPage({ onLoginSuccess, onContinueAsGuest }) {
                 {mode === 'login' && (
                   <span
                     onClick={() => alert("For instant login, you can use password123 or any test password.")}
-                    style={{ fontSize: '0.75rem', color: '#06b6d4', cursor: 'pointer', fontWeight: 500 }}
+                    style={{ fontSize: '0.75rem', color: '#0EA5E9', cursor: 'pointer', fontWeight: 500 }}
                   >
                     Forgot password?
                   </span>
@@ -402,7 +402,7 @@ export default function LoginPage({ onLoginSuccess, onContinueAsGuest }) {
                 id="remember"
                 checked={rememberMe}
                 onChange={(e) => setRememberMe(e.target.checked)}
-                style={{ accentColor: '#06b6d4', cursor: 'pointer' }}
+                style={{ accentColor: '#0EA5E9', cursor: 'pointer' }}
               />
               <label htmlFor="remember" style={{ fontSize: '0.78rem', color: '#94a3b8', cursor: 'pointer' }}>
                 Keep me authenticated on this device
@@ -435,7 +435,7 @@ export default function LoginPage({ onLoginSuccess, onContinueAsGuest }) {
                 background: 'none', border: 'none', color: '#94a3b8', fontSize: '0.825rem',
                 cursor: 'pointer', textDecoration: 'underline', transition: 'color 0.2s ease'
               }}
-              onMouseEnter={(e) => e.currentTarget.style.color = '#06b6d4'}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#0EA5E9'}
               onMouseLeave={(e) => e.currentTarget.style.color = '#94a3b8'}
             >
               Skip login and continue as Guest Researcher

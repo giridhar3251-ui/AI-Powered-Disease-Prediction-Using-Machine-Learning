@@ -217,7 +217,7 @@ export default function ImageUploader({ onAnalysisComplete, onResetResult, image
         <div>
           <h2 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#f8fafc', display: 'flex', alignItems: 'center', gap: '8px', margin: 0 }}>
             <span style={{
-              background: 'linear-gradient(135deg, #06b6d4, #3b82f6)',
+              background: 'linear-gradient(135deg, #0EA5E9, #0284C7)',
               WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent'
             }}>
               AI Skin Disease Detection
@@ -240,7 +240,7 @@ export default function ImageUploader({ onAnalysisComplete, onResetResult, image
             border: '1px solid rgba(6,182,212,0.2)', borderRadius: '8px',
             padding: '5px 10px', color: '#94a3b8'
           }}>
-            <span style={{ color: '#06b6d4', fontWeight: 700 }}>Model:</span>{' '}
+            <span style={{ color: '#0EA5E9', fontWeight: 700 }}>Model:</span>{' '}
             {imageModelInfo.test_accuracy}% accuracy
           </div>
         )}
@@ -256,11 +256,11 @@ export default function ImageUploader({ onAnalysisComplete, onResetResult, image
           <ActionCard
             id="btn-live-camera"
             icon={<Camera size={28} color="#fff" />}
-            iconBg="linear-gradient(135deg, #06b6d4, #3b82f6)"
+            iconBg="linear-gradient(135deg, #0EA5E9, #0284C7)"
             iconGlow="rgba(6,182,212,0.5)"
             label="Live Camera"
             sublabel="Open webcam → see preview → capture"
-            accent="#06b6d4"
+            accent="#0EA5E9"
             onClick={() => openCamera(facingMode)}
             featured
           />
@@ -407,7 +407,7 @@ export default function ImageUploader({ onAnalysisComplete, onResetResult, image
             fontSize: '0.72rem', fontWeight: 700, color: '#e2e8f0',
             display: 'flex', alignItems: 'center', gap: '6px'
           }}>
-            <Camera size={12} color="#06b6d4" />
+            <Camera size={12} color="#0EA5E9" />
             {facingMode === 'user' ? 'Front Camera' : 'Back Camera'}
           </div>
 
@@ -429,7 +429,7 @@ export default function ImageUploader({ onAnalysisComplete, onResetResult, image
                 fontSize: '0.75rem', fontWeight: 700, cursor: 'pointer',
                 transition: 'all 0.2s ease',
                 background: facingMode === 'user'
-                  ? 'linear-gradient(135deg, #06b6d4, #3b82f6)'
+                  ? 'linear-gradient(135deg, #0EA5E9, #0284C7)'
                   : 'transparent',
                 color: facingMode === 'user' ? '#fff' : '#94a3b8',
                 boxShadow: facingMode === 'user' ? '0 0 10px rgba(6,182,212,0.5)' : 'none'
@@ -447,7 +447,7 @@ export default function ImageUploader({ onAnalysisComplete, onResetResult, image
                 fontSize: '0.75rem', fontWeight: 700, cursor: 'pointer',
                 transition: 'all 0.2s ease',
                 background: facingMode === 'environment'
-                  ? 'linear-gradient(135deg, #06b6d4, #3b82f6)'
+                  ? 'linear-gradient(135deg, #0EA5E9, #0284C7)'
                   : 'transparent',
                 color: facingMode === 'environment' ? '#fff' : '#94a3b8',
                 boxShadow: facingMode === 'environment' ? '0 0 10px rgba(6,182,212,0.5)' : 'none'
@@ -488,7 +488,7 @@ export default function ImageUploader({ onAnalysisComplete, onResetResult, image
                 height: '64px',
                 borderRadius: '50%',
                 background: cameraReady
-                  ? 'linear-gradient(135deg, #06b6d4, #3b82f6)'
+                  ? 'linear-gradient(135deg, #0EA5E9, #0284C7)'
                   : 'rgba(100,116,139,0.4)',
                 border: '4px solid rgba(255,255,255,0.9)',
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -544,7 +544,7 @@ export default function ImageUploader({ onAnalysisComplete, onResetResult, image
               onClick={() => analyzeImage(capturedFile, previewUrl)}
               style={{
                 flex: '1 1 200px',
-                background: 'linear-gradient(135deg, #06b6d4, #3b82f6)',
+                background: 'linear-gradient(135deg, #0EA5E9, #0284C7)',
                 color: '#fff', border: 'none', borderRadius: '12px',
                 padding: '13px 20px', fontSize: '0.95rem', fontWeight: 700,
                 cursor: 'pointer', display: 'flex', alignItems: 'center',
@@ -572,7 +572,7 @@ export default function ImageUploader({ onAnalysisComplete, onResetResult, image
                 cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px'
               }}
             >
-              <Camera size={16} color="#06b6d4" /> Retake
+              <Camera size={16} color="#0EA5E9" /> Retake
             </button>
 
             {/* Cancel */}
@@ -613,7 +613,7 @@ export default function ImageUploader({ onAnalysisComplete, onResetResult, image
               {/* Animated scan line */}
               <div style={{
                 position: 'absolute', left: 0, right: 0, height: '3px',
-                background: 'linear-gradient(90deg, transparent, #06b6d4, transparent)',
+                background: 'linear-gradient(90deg, transparent, #0EA5E9, transparent)',
                 animation: 'scanLine 1.5s linear infinite'
               }} />
             </div>
@@ -655,7 +655,7 @@ export default function ImageUploader({ onAnalysisComplete, onResetResult, image
               setTimeout(() => openCamera(facingMode), 50);
             }}
             style={{
-              background: 'linear-gradient(135deg, #06b6d4, #3b82f6)',
+              background: 'linear-gradient(135deg, #0EA5E9, #0284C7)',
               color: '#fff', border: 'none', borderRadius: '10px',
               padding: '10px 22px', fontSize: '0.9rem', fontWeight: 700,
               cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px'

@@ -65,7 +65,7 @@ export default function SymptomSelector({ symptoms, selectedSymptoms, onToggleSy
         <div>
           <h2 style={{ fontSize: '1.25rem', fontWeight: 700, color: '#f8fafc', display: 'flex', alignItems: 'center', gap: '8px' }}>
             <span>Symptom Selection Vocabulary</span>
-            <span style={{ fontSize: '0.75rem', background: 'rgba(6, 182, 212, 0.15)', color: '#22d3ee', padding: '2px 8px', borderRadius: '6px', fontWeight: 600 }}>
+            <span style={{ fontSize: '0.75rem', background: 'rgba(14, 165, 233, 0.15)', color: '#22d3ee', padding: '2px 8px', borderRadius: '6px', fontWeight: 600 }}>
               132 Clinical Features
             </span>
           </h2>
@@ -111,7 +111,7 @@ export default function SymptomSelector({ symptoms, selectedSymptoms, onToggleSy
                 transition: 'all 0.2s ease'
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.borderColor = '#06b6d4';
+                e.currentTarget.style.borderColor = '#0EA5E9';
                 e.currentTarget.style.color = '#ffffff';
               }}
               onMouseLeave={(e) => {
@@ -119,7 +119,7 @@ export default function SymptomSelector({ symptoms, selectedSymptoms, onToggleSy
                 e.currentTarget.style.color = '#cbd5e1';
               }}
             >
-              <Sparkles size={12} color="#06b6d4" />
+              <Sparkles size={12} color="#0EA5E9" />
               <span>{p.name}</span>
             </button>
           ))}
@@ -129,7 +129,7 @@ export default function SymptomSelector({ symptoms, selectedSymptoms, onToggleSy
       {/* Selected Symptoms Dashboard Box */}
       <div style={{
         background: 'rgba(15, 23, 42, 0.9)',
-        border: '1px solid rgba(6, 182, 212, 0.2)',
+        border: '1px solid rgba(14, 165, 233, 0.2)',
         borderRadius: '12px',
         padding: '16px',
         display: 'flex',
@@ -180,7 +180,7 @@ export default function SymptomSelector({ symptoms, selectedSymptoms, onToggleSy
                   <span>{label}</span>
                   <span style={{
                     fontSize: '0.65rem',
-                    background: 'rgba(6, 182, 212, 0.3)',
+                    background: 'rgba(14, 165, 233, 0.3)',
                     borderRadius: '4px',
                     padding: '1px 5px',
                     fontWeight: 700
@@ -253,9 +253,9 @@ export default function SymptomSelector({ symptoms, selectedSymptoms, onToggleSy
                 whiteSpace: 'nowrap',
                 border: 'none',
                 cursor: 'pointer',
-                background: activeCategory === cat ? 'rgba(6, 182, 212, 0.2)' : 'rgba(30, 41, 59, 0.5)',
+                background: activeCategory === cat ? 'rgba(14, 165, 233, 0.2)' : 'rgba(30, 41, 59, 0.5)',
                 color: activeCategory === cat ? '#22d3ee' : '#94a3b8',
-                borderBottom: activeCategory === cat ? '2px solid #06b6d4' : '2px solid transparent',
+                borderBottom: activeCategory === cat ? '2px solid #0EA5E9' : '2px solid transparent',
                 transition: 'all 0.15s ease'
               }}
             >
@@ -287,7 +287,7 @@ export default function SymptomSelector({ symptoms, selectedSymptoms, onToggleSy
               <span style={{
                 fontSize: '0.65rem',
                 color: isSelected ? '#22d3ee' : '#64748b',
-                background: isSelected ? 'rgba(6, 182, 212, 0.25)' : 'rgba(255, 255, 255, 0.05)',
+                background: isSelected ? 'rgba(14, 165, 233, 0.25)' : 'rgba(255, 255, 255, 0.05)',
                 padding: '1px 5px',
                 borderRadius: '4px'
               }}>

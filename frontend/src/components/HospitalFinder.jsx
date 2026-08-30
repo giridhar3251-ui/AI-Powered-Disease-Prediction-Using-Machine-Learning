@@ -7,7 +7,6 @@ import { searchHospitals, fetchDistricts, lookupBranch } from '../api';
 
 export default function HospitalFinder({ initialSpecialty = '', districts = [] }) {
   const [selectedDistrict, setSelectedDistrict] = useState('All Districts (Tamil Nadu)');
-  const [taluk, setTaluk] = useState('');
   const [specialty, setSpecialty] = useState(initialSpecialty);
   const [searchMode, setSearchMode] = useState('district'); // 'district' | 'gps'
   const [gpsLocation, setGpsLocation] = useState(null);
@@ -33,7 +32,6 @@ export default function HospitalFinder({ initialSpecialty = '', districts = [] }
       };
       if (searchMode === 'district') {
         params.district = selectedDistrict;
-        params.taluk = taluk || undefined;
       } else if (gpsLocation) {
         params.lat = gpsLocation.lat;
         params.lng = gpsLocation.lng;
@@ -96,9 +94,9 @@ export default function HospitalFinder({ initialSpecialty = '', districts = [] }
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '14px' }}>
         <div>
           <h2 style={{ fontSize: '1.25rem', fontWeight: 700, color: '#f8fafc', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <Building2 size={20} color="#06b6d4" />
+            <Building2 size={20} color="#0EA5E9" />
             <span>Healthcare & Specialist Finder</span>
-            <span style={{ fontSize: '0.75rem', background: 'rgba(6, 182, 212, 0.15)', color: '#22d3ee', padding: '2px 8px', borderRadius: '6px', fontWeight: 600 }}>
+            <span style={{ fontSize: '0.75rem', background: 'rgba(14, 165, 233, 0.15)', color: '#22d3ee', padding: '2px 8px', borderRadius: '6px', fontWeight: 600 }}>
               Tamil Nadu 38 Districts & GPS
             </span>
           </h2>
@@ -113,17 +111,17 @@ export default function HospitalFinder({ initialSpecialty = '', districts = [] }
             onClick={() => setSearchMode('district')}
             style={{
               padding: '6px 14px', borderRadius: '6px', border: 'none', cursor: 'pointer', fontSize: '0.8rem', fontWeight: 600,
-              background: searchMode === 'district' ? 'linear-gradient(135deg, #06b6d4, #2563eb)' : 'transparent',
+              background: searchMode === 'district' ? 'linear-gradient(135deg, #0EA5E9, #0369A1)' : 'transparent',
               color: searchMode === 'district' ? '#ffffff' : '#94a3b8'
             }}
           >
-            District / Taluk
+            District
           </button>
           <button
             onClick={handleGetGps}
             style={{
               padding: '6px 14px', borderRadius: '6px', border: 'none', cursor: 'pointer', fontSize: '0.8rem', fontWeight: 600,
-              background: searchMode === 'gps' ? 'linear-gradient(135deg, #06b6d4, #2563eb)' : 'transparent',
+              background: searchMode === 'gps' ? 'linear-gradient(135deg, #0EA5E9, #0369A1)' : 'transparent',
               color: searchMode === 'gps' ? '#ffffff' : '#94a3b8',
               display: 'flex', alignItems: 'center', gap: '4px'
             }}
@@ -173,28 +171,14 @@ export default function HospitalFinder({ initialSpecialty = '', districts = [] }
           </div>
         )}
 
-        {/* Taluk input */}
+        {/* Specialty / Disease Filter */}
         <div>
           <label style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 600, display: 'block', marginBottom: '4px' }}>
-            Taluk / Locality Area
+            Disease or Specialty
           </label>
           <input
             type="text"
-            placeholder="e.g. Thousand Lights, Peelamedu..."
-            value={taluk}
-            onChange={(e) => setTaluk(e.target.value)}
-            className="input-control"
-          />
-        </div>
-
-        {/* Specialty Filter */}
-        <div>
-          <label style={{ fontSize: '0.75rem', color: '#94a3b8', fontWeight: 600, display: 'block', marginBottom: '4px' }}>
-            Clinical Specialty
-          </label>
-          <input
-            type="text"
-            placeholder="e.g. Dermatology, Cardiology..."
+            placeholder="e.g. Ophthalmology, Dermatology..."
             value={specialty}
             onChange={(e) => setSpecialty(e.target.value)}
             className="input-control"
@@ -244,13 +228,13 @@ export default function HospitalFinder({ initialSpecialty = '', districts = [] }
               key={hosp.id || idx}
               style={{
                 background: 'rgba(15, 23, 42, 0.85)',
-                border: hosp.is_top_rated ? '1px solid rgba(6, 182, 212, 0.4)' : '1px solid rgba(255, 255, 255, 0.08)',
+                border: hosp.is_top_rated ? '1px solid rgba(14, 165, 233, 0.4)' : '1px solid rgba(255, 255, 255, 0.08)',
                 borderRadius: '14px',
                 padding: '20px 24px',
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '16px',
-                boxShadow: hosp.is_top_rated ? '0 4px 20px rgba(6, 182, 212, 0.15)' : 'none',
+                boxShadow: hosp.is_top_rated ? '0 4px 20px rgba(14, 165, 233, 0.15)' : 'none',
                 transition: 'all 0.2s ease'
               }}
             >
@@ -264,7 +248,7 @@ export default function HospitalFinder({ initialSpecialty = '', districts = [] }
                     </h3>
                     {hosp.is_top_rated && (
                       <span style={{
-                        background: 'linear-gradient(135deg, #06b6d4, #3b82f6)', color: '#ffffff',
+                        background: 'linear-gradient(135deg, #0EA5E9, #0284C7)', color: '#ffffff',
                         fontSize: '0.65rem', fontWeight: 800, padding: '2px 8px', borderRadius: '4px', textTransform: 'uppercase'
                       }}>
                         Top Rated
@@ -282,7 +266,7 @@ export default function HospitalFinder({ initialSpecialty = '', districts = [] }
                   </div>
 
                   <div style={{ display: 'flex', alignItems: 'center', gap: '6px', color: '#cbd5e1', fontSize: '0.825rem', marginTop: '4px' }}>
-                    <MapPin size={14} color="#06b6d4" />
+                    <MapPin size={14} color="#0EA5E9" />
                     <span>{hosp.address}</span>
                   </div>
                 </div>
@@ -311,7 +295,7 @@ export default function HospitalFinder({ initialSpecialty = '', districts = [] }
                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
                   {hosp.specialties.map((spec, sIdx) => (
                     <span key={sIdx} style={{
-                      background: 'rgba(6, 182, 212, 0.1)', border: '1px solid rgba(6, 182, 212, 0.2)',
+                      background: 'rgba(14, 165, 233, 0.1)', border: '1px solid rgba(14, 165, 233, 0.2)',
                       color: '#67e8f9', fontSize: '0.72rem', fontWeight: 600, padding: '2px 8px', borderRadius: '4px'
                     }}>
                       {spec}
@@ -326,7 +310,7 @@ export default function HospitalFinder({ initialSpecialty = '', districts = [] }
                   <button
                     onClick={() => toggleHours(hosp.id)}
                     style={{
-                      background: 'none', border: 'none', color: '#06b6d4', fontSize: '0.8rem', fontWeight: 600,
+                      background: 'none', border: 'none', color: '#0EA5E9', fontSize: '0.8rem', fontWeight: 600,
                       cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '4px', padding: 0
                     }}
                   >
@@ -357,7 +341,7 @@ export default function HospitalFinder({ initialSpecialty = '', districts = [] }
               }}>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '10px' }}>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '0.78rem', color: '#cbd5e1', fontWeight: 600 }}>
-                    <GitBranch size={14} color="#06b6d4" />
+                    <GitBranch size={14} color="#0EA5E9" />
                     <span>Check branch network in other Tamil Nadu districts:</span>
                   </div>
 
@@ -414,7 +398,7 @@ export default function HospitalFinder({ initialSpecialty = '', districts = [] }
                     className="btn-secondary"
                     style={{ textDecoration: 'none', fontSize: '0.8rem', padding: '6px 14px' }}
                   >
-                    <Phone size={13} color="#06b6d4" />
+                    <Phone size={13} color="#0EA5E9" />
                     <span>Call ({hosp.phone})</span>
                   </a>
                 )}

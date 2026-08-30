@@ -20,20 +20,20 @@ export default function Header({
         <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
           <div style={{
             width: '42px', height: '42px', borderRadius: '12px',
-            background: 'linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%)',
+            background: 'linear-gradient(135deg, #0EA5E9 0%, #0284C7 100%)',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
-            boxShadow: '0 0 20px rgba(6, 182, 212, 0.4)'
+            boxShadow: '0 0 20px rgba(14, 165, 233, 0.4)'
           }}>
             <Activity size={24} color="#ffffff" strokeWidth={2.5} />
           </div>
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
               <h1 style={{ fontSize: '1.2rem', fontWeight: 800, color: '#f8fafc', letterSpacing: '-0.02em' }}>
-                Aegis<span style={{ color: '#06b6d4' }}>Med</span> AI
+                Aegis<span style={{ color: '#0EA5E9' }}>Med</span> AI
               </h1>
               <span style={{
-                background: 'rgba(6, 182, 212, 0.15)', color: '#22d3ee',
-                border: '1px solid rgba(6, 182, 212, 0.3)', padding: '2px 8px',
+                background: 'rgba(14, 165, 233, 0.15)', color: '#22d3ee',
+                border: '1px solid rgba(14, 165, 233, 0.3)', padding: '2px 8px',
                 borderRadius: '6px', fontSize: '0.65rem', fontWeight: 700, textTransform: 'uppercase'
               }}>
                 Diagnostic v2.0
@@ -55,9 +55,9 @@ export default function Header({
             style={{
               display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px',
               borderRadius: '8px', border: 'none', cursor: 'pointer', fontSize: '0.85rem', fontWeight: 600,
-              background: activeTab === 'symptoms' ? 'linear-gradient(135deg, #06b6d4 0%, #2563eb 100%)' : 'transparent',
+              background: activeTab === 'symptoms' ? 'linear-gradient(135deg, #0EA5E9 0%, #0369A1 100%)' : 'transparent',
               color: activeTab === 'symptoms' ? '#ffffff' : '#94a3b8',
-              boxShadow: activeTab === 'symptoms' ? '0 4px 12px rgba(6, 182, 212, 0.3)' : 'none',
+              boxShadow: activeTab === 'symptoms' ? '0 4px 12px rgba(14, 165, 233, 0.3)' : 'none',
               transition: 'all 0.2s ease'
             }}
           >
@@ -70,9 +70,9 @@ export default function Header({
             style={{
               display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px',
               borderRadius: '8px', border: 'none', cursor: 'pointer', fontSize: '0.85rem', fontWeight: 600,
-              background: activeTab === 'skin' ? 'linear-gradient(135deg, #06b6d4 0%, #2563eb 100%)' : 'transparent',
+              background: activeTab === 'skin' ? 'linear-gradient(135deg, #0EA5E9 0%, #0369A1 100%)' : 'transparent',
               color: activeTab === 'skin' ? '#ffffff' : '#94a3b8',
-              boxShadow: activeTab === 'skin' ? '0 4px 12px rgba(6, 182, 212, 0.3)' : 'none',
+              boxShadow: activeTab === 'skin' ? '0 4px 12px rgba(14, 165, 233, 0.3)' : 'none',
               transition: 'all 0.2s ease'
             }}
           >
@@ -85,9 +85,9 @@ export default function Header({
             style={{
               display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px',
               borderRadius: '8px', border: 'none', cursor: 'pointer', fontSize: '0.85rem', fontWeight: 600,
-              background: activeTab === 'hospitals' ? 'linear-gradient(135deg, #06b6d4 0%, #2563eb 100%)' : 'transparent',
+              background: activeTab === 'hospitals' ? 'linear-gradient(135deg, #0EA5E9 0%, #0369A1 100%)' : 'transparent',
               color: activeTab === 'hospitals' ? '#ffffff' : '#94a3b8',
-              boxShadow: activeTab === 'hospitals' ? '0 4px 12px rgba(6, 182, 212, 0.3)' : 'none',
+              boxShadow: activeTab === 'hospitals' ? '0 4px 12px rgba(14, 165, 233, 0.3)' : 'none',
               transition: 'all 0.2s ease'
             }}
           >
@@ -133,7 +133,7 @@ export default function Header({
 
               <div style={{
                 width: '32px', height: '32px', borderRadius: '8px', overflow: 'hidden',
-                border: '1px solid rgba(6, 182, 212, 0.4)', background: '#1e293b'
+                border: '1px solid rgba(14, 165, 233, 0.4)', background: '#1e293b'
               }}>
                 <img
                   src={currentUser.avatar || "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=256&q=80"}

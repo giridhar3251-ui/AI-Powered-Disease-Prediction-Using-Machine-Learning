@@ -17,8 +17,8 @@ export default function ResultsPanel({ result, onFindHospitals }) {
       <div className="glass-panel" style={{
         padding: '28px',
         background: 'linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(13, 31, 58, 0.9) 100%)',
-        border: '1px solid rgba(6, 182, 212, 0.35)',
-        boxShadow: '0 12px 40px -10px rgba(6, 182, 212, 0.25)',
+        border: '1px solid rgba(14, 165, 233, 0.35)',
+        boxShadow: '0 12px 40px -10px rgba(14, 165, 233, 0.25)',
         display: 'flex',
         flexDirection: 'column',
         gap: '24px'
@@ -28,7 +28,7 @@ export default function ResultsPanel({ result, onFindHospitals }) {
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '12px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
             <span style={{
-              background: 'linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%)',
+              background: 'linear-gradient(135deg, #0EA5E9 0%, #0284C7 100%)',
               color: '#ffffff',
               fontSize: '0.75rem',
               fontWeight: 800,
@@ -81,7 +81,7 @@ export default function ResultsPanel({ result, onFindHospitals }) {
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginTop: '4px' }}>
               <div style={{
                 display: 'flex', alignItems: 'center', gap: '8px',
-                background: 'rgba(59, 130, 246, 0.15)', border: '1px solid rgba(59, 130, 246, 0.3)',
+                background: 'rgba(2, 132, 199, 0.15)', border: '1px solid rgba(2, 132, 199, 0.3)',
                 padding: '6px 12px', borderRadius: '8px', fontSize: '0.8125rem'
               }}>
                 <UserCheck size={16} color="#60a5fa" />
@@ -113,7 +113,7 @@ export default function ResultsPanel({ result, onFindHospitals }) {
           flexDirection: 'column',
           gap: '12px'
         }}>
-          <span style={{ fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', color: '#06b6d4', letterSpacing: '0.05em' }}>
+          <span style={{ fontSize: '0.8rem', fontWeight: 700, textTransform: 'uppercase', color: '#0EA5E9', letterSpacing: '0.05em' }}>
             Recommended Clinical Precautions & Next Steps
           </span>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '10px' }}>
@@ -137,7 +137,7 @@ export default function ResultsPanel({ result, onFindHospitals }) {
         <div className="glass-panel" style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: '#f8fafc', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <Stethoscope size={18} color="#06b6d4" />
+              <Stethoscope size={18} color="#0EA5E9" />
               <span>Differential Diagnoses</span>
             </h3>
             <span style={{ fontSize: '0.75rem', color: '#94a3b8' }}>Top 5 Probabilities</span>
@@ -168,7 +168,7 @@ export default function ResultsPanel({ result, onFindHospitals }) {
                   <div style={{
                     width: `${Math.max(4, diff.probability)}%`,
                     height: '100%',
-                    background: idx === 0 ? 'linear-gradient(90deg, #06b6d4, #3b82f6)' : '#64748b',
+                    background: idx === 0 ? 'linear-gradient(90deg, #0EA5E9, #0284C7)' : '#64748b',
                     borderRadius: '3px',
                     transition: 'width 0.8s ease'
                   }} />
@@ -186,7 +186,7 @@ export default function ResultsPanel({ result, onFindHospitals }) {
         {/* Symptoms Correlation Matrix */}
         <div className="glass-panel" style={{ padding: '24px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
           <h3 style={{ fontSize: '1.05rem', fontWeight: 700, color: '#f8fafc', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <Info size={18} color="#06b6d4" />
+            <Info size={18} color="#0EA5E9" />
             <span>Symptoms Correlation Breakdown</span>
           </h3>
 
