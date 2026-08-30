@@ -40,8 +40,11 @@ app.add_middleware(
 
 # Serve Frontend Static Assets
 FRONTEND_BUILD_DIR = os.path.join(BASE_DIR, "..", "build")
+FRONTEND_DIST_DIR = os.path.join(BASE_DIR, "..", "dist")
 if os.path.isdir(os.path.join(FRONTEND_BUILD_DIR, "assets")):
     app.mount("/assets", StaticFiles(directory=os.path.join(FRONTEND_BUILD_DIR, "assets")), name="assets")
+elif os.path.isdir(os.path.join(FRONTEND_DIST_DIR, "assets")):
+    app.mount("/assets", StaticFiles(directory=os.path.join(FRONTEND_DIST_DIR, "assets")), name="assets")
 elif os.path.isdir(os.path.join(BASE_DIR, "frontend", "dist", "assets")): # Fallback just in case
     app.mount("/assets", StaticFiles(directory=os.path.join(BASE_DIR, "frontend", "dist", "assets")), name="assets")
 
@@ -691,11 +694,15 @@ def register(req: RegisterRequest):
 @app.get("/{full_path:path}")
 def serve_frontend(full_path: str):
     index_path = os.path.join(FRONTEND_BUILD_DIR, "index.html")
+    dist_index_path = os.path.join(FRONTEND_DIST_DIR, "index.html")
     if not os.path.exists(index_path):
-        # Fallback if build is in frontend/dist
-        fallback_path = os.path.join(BASE_DIR, "frontend", "dist", "index.html")
-        if os.path.exists(fallback_path):
-            index_path = fallback_path
+        if os.path.exists(dist_index_path):
+            index_path = dist_index_path
+        else:
+            # Fallback if build is in frontend/dist
+            fallback_path = os.path.join(BASE_DIR, "frontend", "dist", "index.html")
+            if os.path.exists(fallback_path):
+                index_path = fallback_path
     
     if os.path.exists(index_path):
         return FileResponse(index_path)
