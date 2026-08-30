@@ -5,7 +5,7 @@ services:
     env: python
     rootDir: .
     buildCommand: chmod +x build.sh && ./build.sh
-    startCommand: cd backend && uvicorn index:app --host 0.0.0.0 --port $PORT
+    startCommand: cd api && uvicorn index:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: PYTHON_VERSION
         value: 3.10.0

@@ -54,7 +54,7 @@ if not exist "%BACKEND_DIR%\model\model.joblib" (
 
 :: Release ports if currently occupied
 for /f "tokens=5" %%P in ('netstat -ano ^| findstr /R /C":%BACKEND_PORT% .*LISTENING" 2^>nul') do (
-    echo Releasing occupied backend port %BACKEND_PORT% (PID %%P)
+    echo Releasing occupied api port %BACKEND_PORT% (PID %%P)
     taskkill /PID %%P /F >nul 2>&1
 )
 
@@ -64,7 +64,7 @@ for /f "tokens=5" %%P in ('netstat -ano ^| findstr /R /C":%FRONTEND_PORT% .*LIST
 )
 
 echo Starting Backend Service (FastAPI on port %BACKEND_PORT%)...
-start "Backend" /D "%BACKEND_DIR%" cmd /k ""%PY_CMD%" -m uvicorn index:app --host 0.0.0.0 --port %BACKEND_PORT% --reload"
+start "FastAPI Backend" /D "%BACKEND_DIR%" cmd /k ""%PY_CMD%" -m uvicorn index:app --host 0.0.0.0 --port %BACKEND_PORT% --reload"
 
 echo Starting Frontend Service (Vite on port %FRONTEND_PORT%)...
 start "Frontend" /D "%FRONTEND_DIR%" cmd /k "npm.cmd run dev -- --host 0.0.0.0 --port %FRONTEND_PORT%"

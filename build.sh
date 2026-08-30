@@ -8,6 +8,6 @@ npm run build
 cd ..
 
 echo "=== Installing Backend (Python) ==="
-cd backend
+cd api
 pip install -r requirements.txt
 echo "=== Build Complete ==="
