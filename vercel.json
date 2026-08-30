@@ -1,9 +1,22 @@
 {
-  "outputDirectory": "dist",
+  "builds": [
+    {
+      "src": "backend/index.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build"
+    }
+  ],
   "rewrites": [
     {
+      "source": "/api/(.*)",
+      "destination": "/backend/index.py"
+    },
+    {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "destination": "/frontend/dist/index.html"
     }
   ]
 }
