@@ -1,0 +1,7 @@
+title: AI-Powered Disease Prediction Using Machine Learning
+description: A comprehensive machine learning solution for disease prediction
+theme: jekyll-theme-primer
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
