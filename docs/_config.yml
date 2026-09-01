@@ -5,3 +5,24 @@ markdown: kramdown
 kramdown:
   input: GFM
   hard_wrap: false
+
+# Exclude unnecessary directories from build
+exclude:
+  - .git
+  - .gitignore
+  - .venv
+  - .vscode
+  - api
+  - backend
+  - data
+  - build
+  - frontend
+  - .github
+  - node_modules
+  - __pycache__
+  - "*.pyc"
+  - requirements.txt
+  - package.json
+  - docker-compose.yml
+  - render.yaml
+  - vercel.json
